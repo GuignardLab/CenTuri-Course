@@ -22,9 +22,9 @@ What is important to keep in mind is that a Turing pattern is the result of the 
 It is this interaction and diffusion that we will model in this course. We will also learn how to represent these patterns.
 
 A little bit of knowledge about how to model these interactions is necessary to better understand the remaining of the course.
-First, we will be talking about an activator that will name $A$ and an inhibitor that will name $I$. Their concentration values will be refered to as $a$ and $i$ respectively.
+First, we will be talking about an activator that will name *A* and an inhibitor that will name *I*. Their concentration values will be refered to as *a* and *i* respectively.
 
-The gene regulation network that we are considering here is the simple one where $A$ auto-activates and activates $I$ and $I$ inhibits $A$:
+The gene regulation network that we are considering here is the simple one where *A* auto-activates and activates *I* and *I* inhibits *A*:
 
 <img src="Images/GRN.png" alt="Gene Regulation Network" width="200"/>
 
