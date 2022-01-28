@@ -42,12 +42,12 @@ to make a temporary save of the concentration
 values, maybe keep that in mind, this might
 become handy later :| """,
 
-    6:"""
+    7:"""
 for test_tau in np.linspace(.05, 1, 5):
     for test_k in np.linspace(-1, 1, 5):
         A, I = answer_results(4, A=0.4, I=0.15, dt=dt, k=test_k, tau=test_tau, n=n)
         plot_concentration_1cell(A, I,
-                                 save_path=f'question_6/k{test_k}_tau{test_tau}.png')
+                                 save_path=folder / f'k{test_k}_tau{test_tau}.png')
 
 Note that this answer uses the answer_results function
 but you should use your own!""",

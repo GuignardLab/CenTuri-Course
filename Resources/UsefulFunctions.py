@@ -68,8 +68,7 @@ def plot_concentration_1cell(c1, c2=None, return_plot=False, save_path=None):
     ax.set_xlabel('Time-point')
     ax.set_ylabel('Concentration')
     if save_path is not None:
-        if save_path[-4:]!='.png':
-            save_path += '.png'
+        save_path = save_path.with_suffix('.png')
         plt.savefig(save_path)
         plt.close(fig)
     if return_plot:
