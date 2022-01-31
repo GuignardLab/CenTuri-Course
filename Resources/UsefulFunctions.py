@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 def da_alone(a, dt, k):
     """
@@ -67,6 +68,43 @@ def plot_concentration_1cell(c1, c2=None, return_plot=False, save_path=None):
         ax.legend()
     ax.set_xlabel('Time-point')
     ax.set_ylabel('Concentration')
+    fig.tight_layout()
+    if save_path is not None:
+        save_path = save_path.with_suffix('.png')
+        plt.savefig(save_path)
+        plt.close(fig)
+    if return_plot:
+        return fig, ax
+
+def plot_concentration_1D(c1, c2=None, return_plot=False,
+                          save_path=None, step=100):
+    """
+    Plots the concentration evolution given 1 or 2 array(s) of cells
+    and concentrations. When two array are combined, the firs concentration
+    is in the green and the second in the red. Both values are mixed.
+
+    Args:
+        c1 ndarray (n, m): array of concentration of n cells
+                           over m time-points
+        c2 ndarray (n, m): array of concentration of n cells
+                           over m time-points
+    """
+    fig, ax = plt.subplots(figsize=(10, 8))
+    if c2 is None:
+        im = ax.imshow(c1[:, ::step], interpolation='nearest')
+        cbar = plt.colorbar(im)
+        cbar.set_label('Concentration')
+    else:
+        max_ = np.max([c1, c2])
+        min_ = np.min([c1, c2])
+        rgb = np.array([c1, c2, np.zeros_like(c1)]).transpose(1, 2, 0)
+        rgb = (rgb-min_)/(max_-min_)
+        im = ax.imshow(rgb[:,::step,:], interpolation='nearest')
+    ax.set_xlabel('Time-point')
+    ax.set_ylabel('Cell #')
+    ax.set_xticks(np.linspace(0, c1.shape[1]//step, 6).astype(int)[:-1])
+    ax.set_xticklabels([f'{v*step:.0f}' for v in ax.get_xticks()])
+    fig.tight_layout()
     if save_path is not None:
         save_path = save_path.with_suffix('.png')
         plt.savefig(save_path)
@@ -121,3 +159,32 @@ def answer_results(q, **kwargs):
         print(f'Question {q} were not found')
         out = None
     return out
+
+def __get_random_table(n, m, seed=0):
+    np.random.seed(seed)
+    return np.random.rand(n, m)
+
+def get_random_table(n, m, seed=0):
+    """
+    Return a array of size n by m filled with
+    random values between 0 and 1.
+
+    Args:
+        n (int): first dimension of the array
+        m (int): second dimension of the array
+
+    Returns:
+        ndarray (n, m)
+    """
+    # Nope, you will not see the code in here!
+    # I mean, if you really want to you can,
+    # but that's cheating ...
+    return __get_random_table(n, m, seed=seed)
+
+
+
+
+
+
+
+

@@ -45,7 +45,8 @@ become handy later :| """,
     6:"""
 def compute_AI(a, i, dt, k, tau, n): # Don't forget to add arguments
     A, I = [a], [i]
-    for t in range(n):
+    for t in range(n-1): # the -1 is because the first value
+                         # is already in the array
         new_A = A[-1] + da(A[-1], I[-1], dt, k)
         new_I = I[-1] + di(I[-1], A[-1], dt, tau)
         I.append(new_I)
@@ -61,6 +62,39 @@ for test_tau in np.linspace(.05, 1, 5):
 
 Note that this answer uses the answer_results function
 but you should use your own!""",
+
+    8:"""
+for file in p.iterdir(): f
+    name = file.name  # get the name of the of the file
+    if 'png' in name: # check if the file is a png file
+                      # Note that it is always safer to
+                      # check that you are actually working
+                      # with the intended files to avoid
+                      # removing unintended files!
+        k_val, tau_val_png = name.split('_') # That is assuming that
+                                             # your files have the format
+                                             # described earlier
+        new_folder = p / k_val # k_val is the name of the new folder
+                               # p is the path to the folder containing
+                               # the new folder, hence new_folder is the
+                               # path to the new folder.
+        if not new_folder.exists(): # checking if the new folder already exists
+            Path.mkdir(new_folder)  # Create it if it does not
+        file.rename(new_folder / name) #
+        # Path.rename(f, new_folder / name) # Equivalent to the previous line""",
+
+    9:"""
+A = np.zeros((size, n))""",
+
+    10:"""
+out = A[:3, -8:]""",
+
+    11:"""
+A[:, 0] = np.random.random(100)""",
+
+    12:"""
+I = np.zeros((size, n))
+I[:, 0] = np.random.random(100)""",
 }
 
 hint_dict = {
@@ -105,7 +139,10 @@ the help of a function (np.linspace).
 
 Because we want to make two parameters
 vary simultaneously, we need to have
-a for loop within another one!"""
+a for loop within another one!""",
+
+    8:"""
+Look at the following cells to see some advanced help""",
 }
 
 def answer(q):
