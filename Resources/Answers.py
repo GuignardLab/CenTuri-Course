@@ -42,6 +42,16 @@ to make a temporary save of the concentration
 values, maybe keep that in mind, this might
 become handy later :| """,
 
+    6:"""
+def compute_AI(a, i, dt, k, tau, n): # Don't forget to add arguments
+    A, I = [a], [i]
+    for t in range(n):
+        new_A = A[-1] + da(A[-1], I[-1], dt, k)
+        new_I = I[-1] + di(I[-1], A[-1], dt, tau)
+        I.append(new_I)
+        A.append(new_A)
+    return A, I""",
+
     7:"""
 for test_tau in np.linspace(.05, 1, 5):
     for test_k in np.linspace(-1, 1, 5):
@@ -84,6 +94,12 @@ of the latest values of the list
 before manipulating them.""",
 
     6:"""
+It is important to remember to
+define the correct function
+parameters and return values""",
+
+
+    7:"""
 Remember to use the `?` to call
 the help of a function (np.linspace).
 
