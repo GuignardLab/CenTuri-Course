@@ -112,6 +112,48 @@ def plot_concentration_1D(c1, c2=None, return_plot=False,
     if return_plot:
         return fig, ax
 
+def __compute_AI(a, i, dt, k, tau, n):
+    A, I = [a], [i]
+    for t in range(n-1):
+        new_A = A[-1] + da(A[-1], I[-1], dt, k)
+        new_I = I[-1] + di(I[-1], A[-1], dt, tau)
+        I.append(new_I)
+        A.append(new_A)
+    return A, I
+
+def retrieve_compute_AI():
+    """
+    Returns the function compute_AI
+    """
+    return __compute_AI
+
+def __get_random_table(n, m, seed=0):
+    np.random.seed(seed)
+    return np.random.rand(n, m)
+
+def get_random_table(n, m, seed=0):
+    """
+    Return a array of size n by m filled with
+    random values between 0 and 1. The random
+    values will always be the same thanks to the
+    seed. The seed can be changed
+
+    Args:
+        n (int): first dimension of the array
+        m (int): second dimension of the array
+        seed (int): Determine the seed for the
+                    random draw. Default 0.
+                    If None, it will be different
+                    each time it is ran.
+
+    Returns:
+        ndarray (n, m)
+    """
+    # Nope, you will not see the code in here!
+    # I mean, if you really want to you can,
+    # but that's cheating ...
+    return __get_random_table(n, m, seed=seed)
+
 def __question_4(*, A, I, dt, k, tau, n):
     if not isinstance(A, list):
         A = [A]
@@ -124,16 +166,34 @@ def __question_4(*, A, I, dt, k, tau, n):
         A.append(new_A)
     return A, I
 
+def __question_13(*, A, I, dt, k, tau, n):
+    A = np.copy(A)
+    I = np.copy(I)
+    for cell_num, (a, i) in enumerate(zip(A[:, 0], I[:, 0])):
+        A_cell, I_cell = __compute_AI(a, i, dt, k, tau, n)
+        A[cell_num, :] = A_cell
+        I[cell_num, :] = I_cell
+    return A, I
+
 results_dict = {
-    4: __question_4
+    4: __question_4,
+    13: __question_13
 }
 
 params_dict = {
     4: """
     For this function, the following calling
     is expected (changing val as needed):
-    answer_results(4, A=[val], I=[val],
-                   dt=val, k=val, tau=val)
+    answer_results(4, A=[<val>], I=[<val>],
+                   dt=<val>, k=<val>, tau=<val>)
+    """,
+    13: """
+    For this function, the following calling
+    is expected (changing val as needed):
+    answer_results(13, A=A, I=I,
+                   dt=<val>, k=<val>, tau=<val>)
+    With A and I you tables with the first value
+    initialized.
     """
 }
 
@@ -159,32 +219,3 @@ def answer_results(q, **kwargs):
         print(f'Question {q} were not found')
         out = None
     return out
-
-def __get_random_table(n, m, seed=0):
-    np.random.seed(seed)
-    return np.random.rand(n, m)
-
-def get_random_table(n, m, seed=0):
-    """
-    Return a array of size n by m filled with
-    random values between 0 and 1.
-
-    Args:
-        n (int): first dimension of the array
-        m (int): second dimension of the array
-
-    Returns:
-        ndarray (n, m)
-    """
-    # Nope, you will not see the code in here!
-    # I mean, if you really want to you can,
-    # but that's cheating ...
-    return __get_random_table(n, m, seed=seed)
-
-
-
-
-
-
-
-

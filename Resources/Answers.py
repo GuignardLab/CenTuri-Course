@@ -1,11 +1,11 @@
 answer_dict = {
     1: """
-a = 2.8e-4
-b = 5e-3
+mu_a = 2.8e-4
+mu_i = 5e-3
 tau = .1
 k = -.005
 size = 100
-dx = 2. / size
+dx = dy = 2. / size
 T = 9.0
 dt = .001
 n = int(T / dt)""",
@@ -95,6 +95,23 @@ A[:, 0] = np.random.random(100)""",
     12:"""
 I = np.zeros((size, n))
 I[:, 0] = np.random.random(100)""",
+
+    13:"""
+# Compressed solution:
+for cell_num, (a, i) in enumerate(zip(A[:, 0], I[:, 0])):
+    A_cell, I_cell = compute_AI(a, i, dt, k, tau, n)
+    A[cell_num, :] = A_cell
+    I[cell_num, :] = I_cell
+
+#Other solution:
+for cell_num in range(size):
+    a = A[cell_num, 0]
+    i = I[cell_num, 0]
+    A_cell, I_cell = compute_AI(a, i, dt, k, tau, n)
+    A[cell_num, :] = A_cell
+    I[cell_num, :] = I_cell
+
+"""
 }
 
 hint_dict = {
