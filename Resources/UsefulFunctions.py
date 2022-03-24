@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from scipy.ndimage import convolve
 import numpy as np
 
 def da_alone(a, dt, k):
@@ -175,9 +176,40 @@ def __question_13(*, A, I, dt, k, tau, n):
         I[cell_num, :] = I_cell
     return A, I
 
+def __question_14(*, A, I, dt, k, tau, dx, mu_a, mu_i):
+    new_A = np.zeros_like(A)
+    new_I = np.zeros_like(I)
+    new_A[1:-1] = (A[1:-1] +
+                   dt * (dx*mu_a*(A[:-2] + A[2:] - 2*A[1:-1]) +
+                         A[1:-1] - A[1:-1]**3 - I[1:-1] + k))
+    new_A[0] = (A[0] +
+                dt * (dx*mu_a*(A[1] - A[0]) +
+                      A[0] - A[0]**3 - I[0] + k))
+    new_A[-1] = (new_A[-1] +
+                 dt * (dx*mu_a*(A[-2] - A[-1]) +
+                       A[-1] - A[-1]**3 - I[-1] + k))
+
+    new_I[1:-1] = (I[1:-1] +
+                   dt/tau * (dx*mu_i*(I[:-2] + I[2:] - 2*I[1:-1]) +
+                             A[1:-1] - I[1:-1]))
+    new_I[0] = (I[0] +
+                dt/tau * (dx*mu_i*(I[1] - I[0]) +
+                          A[0] - I[0]))
+    new_I[-1] = (I[-1] +
+                 dt/tau * (dx*mu_i*(I[-2] - I[-1]) +
+                           A[-1] - I[-1]))
+    return new_A, new_I
+
+def __question_16(*, arr, nb_neighbs, kernel, mu):
+    to_cell = convolve(arr, kernel, mode='constant', cval=0)
+    from_cell = nb_neighbs*arr
+    return mu*(to_cell - from_cell)
+
 results_dict = {
     4: __question_4,
-    13: __question_13
+    13: __question_13,
+    14: __question_14,
+    16: __question_16
 }
 
 params_dict = {
@@ -192,8 +224,16 @@ params_dict = {
     is expected (changing val as needed):
     answer_results(13, A=A, I=I,
                    dt=<val>, k=<val>, tau=<val>)
-    With A and I you tables with the first value
+    With A and I your tables with the first value
     initialized.
+    """,
+    14: """
+    For this function, the following calling
+    is expected (changing val as needed):
+    answer_results(14, A=A, I=I,
+                   dt=<val>, k=<val>, tau=<val>,
+                   dx=<val>, mu_a=<val>, mu_i=<val>)
+    With A and I a table of size nb_cells*1.
     """
 }
 
