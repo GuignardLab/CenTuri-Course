@@ -200,10 +200,11 @@ def __question_14(*, A, I, dt, k, tau, dx, mu_a, mu_i):
                            A[-1] - I[-1]))
     return new_A, new_I
 
-def __question_16(*, arr, nb_neighbs, kernel, mu):
-    to_cell = convolve(arr, kernel, mode='constant', cval=0)
+def __question_16(*, arr, nb_neighbs, kernel, mu, dx, dy):
+    to_cell = convolve2d(arr, kernel, mode='constant', cval=0)
     from_cell = nb_neighbs*arr
-    return mu*(to_cell - from_cell)
+    out = mu*(to_cell - from_cell)/(dx*dy)
+    return out
 
 results_dict = {
     4: __question_4,
