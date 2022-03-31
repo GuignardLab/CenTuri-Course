@@ -201,17 +201,49 @@ def __question_14(*, A, I, dt, k, tau, dx, mu_a, mu_i):
     return new_A, new_I
 
 def __question_16(*, arr, nb_neighbs, kernel, mu, dx, dy):
-    to_cell = convolve2d(arr, kernel, mode='constant', cval=0)
+    to_cell = convolve(arr, kernel, mode='constant', cval=0)
     from_cell = nb_neighbs*arr
     out = mu*(to_cell - from_cell)/(dx*dy)
     return out
+
+def __diffusion(arr, nb_neighbs, kernel, mu, dx, dy):
+    to_cell = convolve(arr, kernel, mode='constant', cval=0)
+    from_cell = nb_neighbs*arr
+    out = mu*(to_cell - from_cell)/(dx*dy)
+    return out
+
+def __question_17(*, dt, k, tau, size, T,
+                   mu_a, mu_i, dx, dy, seed=0):
+    n = int(T/dt)
+    A = np.zeros((size, size, n))
+    I = np.zeros((size, size, n))
+    np.random.seed(seed)
+    A[..., 0] = np.random.random((size, size))
+    np.random.seed(seed+1)
+    I[..., 0] = np.random.random((size, size))
+
+    kernel = [[0, 1, 0],
+              [1, 0, 1],
+              [0, 1, 0]]
+    mask = np.ones_like(A[..., 0])
+    nb_neighbs = convolve(mask, kernel, mode='constant', cval=0)
+
+    for t in range(1, n):
+        diff_A = __diffusion(A[:, :, t-1], nb_neighbs, kernel, mu_a, dx, dy)
+        A[..., t] = A[..., t-1] + dt*(diff_A + A[..., t-1] - A[..., t-1]**3 - I[..., t-1] + k)
+        diff_I = __diffusion(I[:, :, t-1], nb_neighbs, kernel, mu_i, dx, dy)
+        I[..., t] = I[..., t-1] + dt/tau*(diff_I + A[..., t-1] - I[..., t-1])
+
+    return A, I
 
 results_dict = {
     4: __question_4,
     13: __question_13,
     14: __question_14,
-    16: __question_16
+    16: __question_16,
+    17: __question_17
 }
+
 
 params_dict = {
     4: """
@@ -235,6 +267,23 @@ params_dict = {
                    dt=<val>, k=<val>, tau=<val>,
                    dx=<val>, mu_a=<val>, mu_i=<val>)
     With A and I a table of size nb_cells*1.
+    """,
+    16:"""
+    For this function, the following calling
+    is expected (changing val as needed):
+    answer_results(16, arr=arr, nb_neighbs=nb_neighbs,
+                   kernel=kernel, mu=<val>, dx=<val>, dy=<val>)
+    With arr and nb_neighbs a table of size `size`*`size`
+    and kernel a table of `size` `s`*`s` with `s<=size`.
+    """,
+    17:"""
+    For this function, the following calling
+    is expected (changing val as needed):
+    answer_results(17, dt=<val>, k=<val>, tau=<val>, 
+                   size=<val>, T=<val>, mu_a=<val>,
+                   mu_i=<val>, dx=<val>, dy=<val>, seed=0)
+    with seed being a seed for the random generation
+    of the initial concentrations
     """
 }
 

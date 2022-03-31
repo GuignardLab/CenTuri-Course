@@ -103,7 +103,7 @@ for cell_num, (a, i) in enumerate(zip(A[:, 0], I[:, 0])):
     A[cell_num, :] = A_cell
     I[cell_num, :] = I_cell
 
-#Other solution:
+# Other solution:
 for cell_num in range(size):
     a = A[cell_num, 0]
     i = I[cell_num, 0]
@@ -144,7 +144,7 @@ def dA_I(A, I, dt, k, tau, dx, mu_a, mu_i):
 
     16:"""
 def diffusion(arr, nb_neighbs, kernel, mu, dx, dy):
-    to_cell = convolve2d(arr, kernel, mode='constant', cval=0)
+    to_cell = convolve(arr, kernel, mode='constant', cval=0)
     from_cell = nb_neighbs*arr
     out = mu*(to_cell - from_cell)/(dx*dy)
     return out""",
