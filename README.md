@@ -77,7 +77,10 @@ One way to solve the issue is to install [Miniforge](https://github.com/conda-fo
 - **[From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) Especially useful when wanting to use Numpy, which you probably should!**
 
 ### 1.1 Goal of this course
-This course aims at teaching the basics of coding using reaction diffusion simulations as a support, more specifically the Turing patterns.
+This course aims at teaching the basics of coding using reaction diffusion simulations as a support, more specifically the Turing patterns. The idea is that eventually you would be able to produce the following animation:
+
+<img src="Images/My-first-Turing-Pattern.gif" alt="Gene Regulation Network" width="200"/>
+
 Understanding the mathematics or the biology behind the Turing patterns is not necessary but it might help to understand better what is happening under the hood.
 
 At the end of the course, we would like you to be able to write small pieces of code to do basic data analysis.
