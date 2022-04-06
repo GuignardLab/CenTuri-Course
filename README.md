@@ -1,7 +1,7 @@
 # Introduction to Python using Turing patterns
 
 ## 1. Introduction
----
+
 **First of, within this course [this page](https://docs.python.org/3/tutorial/index.html) will be mentioned a lot. It is a really good (maybe a bit crude) source for information and it is the official Python page so it should also be quite accurate.**
 
 **Moreover, if you would like to read more about python, you can find a good list of books about Python [there](https://wiki.python.org/moin/PythonBooks) (not all of them are free).**
@@ -106,32 +106,32 @@ The gene regulation network that we are considering here is the simple one where
 >
 > <img src="https://render.githubusercontent.com/render/math?math=A \rightarrow A"> (<img src="https://render.githubusercontent.com/render/math?math=A"> is auto activated)
 >
-> $A \rightarrow I$ ($A$ activates $I$)
+> <img src="https://render.githubusercontent.com/render/math?math=A \rightarrow I"> (<img src="https://render.githubusercontent.com/render/math?math=A"> activates <img src="https://render.githubusercontent.com/render/math?math=I">)
 >
-> $I \dashv A$ ($I$ inhibits $A$)
+> <img src="https://render.githubusercontent.com/render/math?math=I \dashv A"> (<img src="https://render.githubusercontent.com/render/math?math=I"> inhibits <img src="https://render.githubusercontent.com/render/math?math=A">)
 >
 > These interactions can be modelled multiple ways.
 > We decided here to use the [FitzHugh–Nagumo model](https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model) (for no particular reason) resulting in the following equations:
 >
-> $\frac{\delta a}{\delta t} = \mu_a\Delta a + a - a^3 - i + k$ [1]
+> <img src="https://render.githubusercontent.com/render/math?math=\frac{\delta a}{\delta t} = \mu_a\Delta a + a - a^3 - i + k"> [1]
 >
-> $\tau \frac{\delta i}{\delta t} = \mu_i\Delta i + a - i$ [2]
+> <img src="https://render.githubusercontent.com/render/math?math=\tau \frac{\delta i}{\delta t} = \mu_i\Delta i + a - i"> [2]
 >
-> These are partial differential equations that represent the change of concentration of $A$ ($\delta a$) or $I$ ($\delta i$) in time ($\delta t$).
+> These are partial differential equations that represent the change of concentration of <img src="https://render.githubusercontent.com/render/math?math=A"> (<img src="https://render.githubusercontent.com/render/math?math=\delta a">) or <img src="https://render.githubusercontent.com/render/math?math=I"> (<img src="https://render.githubusercontent.com/render/math?math=\delta i">) in time (<img src="https://render.githubusercontent.com/render/math?math=\delta t">).
 >
-> In equation [1], $\Delta a$ is the potential diffusion $A$ and $\mu_a$ is the diffusion coefficient.
-> $+ a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ($0<k$), a sink ($k<0$) or is neutral ($k=0$).
+> In equation [1], <img src="https://render.githubusercontent.com/render/math?math=\Delta a"> is the potential diffusion <img src="https://render.githubusercontent.com/render/math?math=A"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> is the diffusion coefficient.
+> <img src="https://render.githubusercontent.com/render/math?math=+ a"> is the auto-activation of <img src="https://render.githubusercontent.com/render/math?math=A">, <img src="https://render.githubusercontent.com/render/math?math=-a^3"> is the degradation, <img src="https://render.githubusercontent.com/render/math?math=-i"> is the inhibition from <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=k"> is a constant to determine whether <img src="https://render.githubusercontent.com/render/math?math=A"> acts as a source (<img src="https://render.githubusercontent.com/render/math?math=0<k">), a sink (<img src="https://render.githubusercontent.com/render/math?math=k<0">) or is neutral (<img src="https://render.githubusercontent.com/render/math?math=k=0">).
 >
-> In equation [2], $\Delta i$ is the potential diffusion of $I$ and $\mu_i$ is the diffusion coefficient.
-> $+a$ is the activation from $A$, $-i$ is the degradation and $\tau$ allows to modulate the amplitude of change of concentration of $I$ compared to the one of the activator $A$.
+> In equation [2], <img src="https://render.githubusercontent.com/render/math?math=\Delta i"> is the potential diffusion of <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> is the diffusion coefficient.
+> <img src="https://render.githubusercontent.com/render/math?math=+a"> is the activation from <img src="https://render.githubusercontent.com/render/math?math=A">, <img src="https://render.githubusercontent.com/render/math?math=-i"> is the degradation and <img src="https://render.githubusercontent.com/render/math?math=\tau"> allows to modulate the amplitude of change of concentration of <img src="https://render.githubusercontent.com/render/math?math=I"> compared to the one of the activator <img src="https://render.githubusercontent.com/render/math?math=A">.
 
 It is important to know that to model the previous network it is necessary to decide on some values, the parameters of the model:
-- the diffusion coefficients $\mu_a$ and $\mu_i$ (referred to as `mu_a` and `mu_i` in the code)
-- the constant $\tau$ (referred to as `tau`)
-- the constant $k$ (referred to as `k`)
+- the diffusion coefficients <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> (referred to as `mu_a` and `mu_i` in the code)
+- the constant <img src="https://render.githubusercontent.com/render/math?math=\tau"> (referred to as `tau`)
+- the constant <img src="https://render.githubusercontent.com/render/math?math=k"> (referred to as `k`)
 
-Because we will solve the differential equations numerically (as opposed to analytically) using "simple" numerical models, we will fix the value of $\delta t$. Therefore:
-- $\delta t$ is a parameter (referred to as `dt`)
+Because we will solve the differential equations numerically (as opposed to analytically) using "simple" numerical models, we will fix the value of <img src="https://render.githubusercontent.com/render/math?math=\delta t">. Therefore:
+- <img src="https://render.githubusercontent.com/render/math?math=\delta t"> is a parameter (referred to as `dt`)
 
 Moreover other values are necessary for the computation also need to be decided:
 - the size of the grid we will be working on, ie the number of cells considered (referred to as `size`)
