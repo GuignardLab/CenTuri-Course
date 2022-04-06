@@ -55,7 +55,7 @@ Computers have strengths and weaknesses. They are especially good at:
 - performing basic operations: additions, multiplications, ...
 - accessing their short and long term memory
 
-For example, current common processors are working at $2.5GHz\simeq 2.5\times 10^9$ actions per second, meaning that if you would perform 1 action every second it would take you about 800 years to perform as many actions as a computer is doing in one second.
+For example, current common processors are working at <img src="https://render.githubusercontent.com/render/math?math=2.5GHz\simeq 2.5\times 10^9"> actions per second, meaning that if you would perform 1 action every second it would take you about 800 years to perform as many actions as a computer is doing in one second.
 
 Computers are also good at storing information and accessing it.
 Computers can store about 1TB of data in "slow-to-access" memory and about 32GB of data in fast access memory (RAM).
@@ -94,17 +94,17 @@ What is important to keep in mind is that in its simplest form, a Turing pattern
 It is this interaction and diffusion that we will model in this course. We will also learn how to graphically represent these patterns.
 
 A little bit of knowledge about how to model these interactions is necessary to better understand the remainder of the course.
-First, we will be talking about an activator that will name $A$ and an inhibitor that will name $I$. Their concentration values will be refered to as $a$ and $i$ respectively.
+First, we will be talking about an activator that will name <img src="https://render.githubusercontent.com/render/math?math=A"> and an inhibitor that will name <img src="https://render.githubusercontent.com/render/math?math=I">. Their concentration values will be refered to as <img src="https://render.githubusercontent.com/render/math?math=a"> and <img src="https://render.githubusercontent.com/render/math?math=i"> respectively.
 
-The gene regulation network that we are considering here is the simple one where $A$ auto-activates and activates $I$ and $I$ inhibits $A$:
+The gene regulation network that we are considering here is the simple one where <img src="https://render.githubusercontent.com/render/math?math=A"> auto-activates and activates <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=I"> inhibits <img src="https://render.githubusercontent.com/render/math?math=A">:
 
 <img src="Images/GRN.png" alt="Gene Regulation Network" width="200"/>
 
 > _**To go a little bit further (not required):**_
 >
-> From this network, we can extract the interaction between activator $A$ and an inhibitor $I$ as follow:
+> From this network, we can extract the interaction between activator <img src="https://render.githubusercontent.com/render/math?math=A"> and an inhibitor <img src="https://render.githubusercontent.com/render/math?math=I"> as follow:
 >
-> $A \rightarrow A$ ($A$ is auto activated)
+> <img src="https://render.githubusercontent.com/render/math?math=A \rightarrow A"> (<img src="https://render.githubusercontent.com/render/math?math=A"> is auto activated)
 >
 > $A \rightarrow I$ ($A$ activates $I$)
 >
