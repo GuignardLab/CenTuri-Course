@@ -1,5 +1,18 @@
 # Introduction to Python using Turing patterns
 
+## Table of contents (Jupyter Notebooks)
+0. [Introduction](0-Introduction.ipynb)
+1. [Variables](1-Variables.ipynb)
+2. [Data structures](2-Data-Structures.ipynb)
+3. [Conditional statements and loops](3-Conditional-Statements-Loops.ipynb)
+4. [Some exercises](4-Some-Exercises.ipynb)
+5. [Introduction to functions](5-0-Introduction-function.ipynb)
+    1. [File manipulation](5-1-File-manipulation.ipynb)
+6. [From 0D to 1D](6-1-From-0D-to-1D.ipynb)
+    1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.ipynb)
+7. [From 1D to 2D](7-From-1D-to-2D.ipynb)
+8. [Playing with the model](8-Playing-with-the-model.ipynb) $\leftarrow$
+
 ## 0. Requirements for the course.
 
 ### 0.1 Recommended software
@@ -65,7 +78,7 @@ One way to solve the issue is to install [Miniforge](https://github.com/conda-fo
 
 ### 1.1 Goal of this course
 This course aims at teaching the basics of coding using reaction diffusion simulations as a support, more specifically the Turing patterns.
-Understanding the mathematics or the biology behind the Turing patterns is not necessary but it might help to understand better what is happening behind the hood.
+Understanding the mathematics or the biology behind the Turing patterns is not necessary but it might help to understand better what is happening under the hood.
 
 At the end of the course, we would like you to be able to write small pieces of code to do basic data analysis.
 No computation level is required though it is good to keep in mind that at the time being, this notebook alone might not be enough: the teachers are still necessary (unfortunately?) to introduce the concepts and to help answer the potential questions.
