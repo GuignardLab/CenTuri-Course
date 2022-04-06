@@ -1,5 +1,58 @@
 # Introduction to Python using Turing patterns
 
+## 0. Requirements for the course.
+
+### 0.1 Recommended software
+
+This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.5 or newer.
+
+To install the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
+
+### 0.2 Installing conda
+
+Conda can be installed multiple ways. We do not have any recommendations about how to but one can read [there](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for a likely exhaustive list on ways to install conda. That being said.
+
+Note that we do not necessarily recommend installing Anaconda, we do have a slight preference towards [Miniconda](https://docs.conda.io/en/latest/miniconda.html) but that's just us.
+
+Moreover, we advise to start jupyter notebooks from a shell/terminal/prompt to be able to better see the error messages.
+
+### 0.3 Dependencies
+
+While we tried to keep the dependencies as small as possible, few are still required:
+
+- [Jupyter notebook](https://jupyter.org/)
+- [NumPy](https://numpy.org/)
+- [Scipy](https://scipy.org/)
+- [Matplotlib](https://matplotlib.org/)
+
+To install them one can for example run the following command lines in a terminal, assuming that conda is installed:
+
+```shell
+conda create --name CenTuri-Course
+```
+
+to create the environment for the course. Then:
+
+```shell
+conda activate CenTuri-Course
+```
+
+to activate the course environment. And finally:
+
+```shell
+conda install notebook numpy matplotlib
+```
+
+All dependencies should now be installed!
+
+Enjoy!
+
+### 0.4 Troubleshooting for MacOs M1 chips.
+
+The newly introduced M1 chips in the latest macbooks can create some difficulties for installation.
+
+One way to solve the issue is to install [Miniforge](https://github.com/conda-forge/miniforge) and to then use it as Miniconda.
+
 ## 1. Introduction
 
 **First of, within this course [this page](https://docs.python.org/3/tutorial/index.html) will be mentioned a lot. It is a really good (maybe a bit crude) source for information and it is the official Python page so it should also be quite accurate.**
@@ -138,55 +191,3 @@ Moreover other values are necessary for the computation also need to be decided:
 - the distance between two cells (ie the space step: `dx` and `dy`)
 - the total time of the simulation (`T`)
 - the number of iterations (`n`, which is determined by the ratio of `T` over `dt`)
-
-## 2. Requirements for the course.
-
-### 2.1 Recommended software
-
-This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.5 or newer.
-
-To install the required dependencies we recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/).
-
-### 2.2 Installing conda
-
-Conda can be installed multiple ways. We do not have any recommendations about how to but one can read [there](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for a likely exhaustive list on ways to install conda. That being said, we do have a slight preference towards [Miniconda](https://docs.conda.io/en/latest/miniconda.html) but that's just us.
-
-### 2.3 Dependencies
-
-While we tried to keep the dependencies as small as possible, few are still required:
-
-- [Jupyter notebook](https://jupyter.org/)
-
-- [NumPy](https://numpy.org/) 
-
-- [Matplotlib](https://matplotlib.org/)
-
-To install them one can for example run the following command lines in a terminal, assuming that conda is installed:
-
-```shell
-conda create --name CenTuri-Course
-```
-
-to create the environement for the course. Then:
-
-```shell
-conda activate CenTuri-Course
-```
-
-to activate the course environement. And finally:
-
-```shell
-conda install notebook numpy matplotlib
-```
-
-All dependencies should now be installed!
-
-## 3. Starting the course
-
-Now that everything should be installed you can start the course by running
-
-```shell
-jupyter notebook Turing-course.ipynb
-```
-
-Enjoy!
