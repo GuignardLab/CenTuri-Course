@@ -83,7 +83,7 @@ This course aims at teaching the basics of coding using reaction diffusion simul
 
 Understanding the mathematics or the biology behind the Turing patterns is not necessary but it might help to understand better what is happening under the hood.
 
-At the end of the course, we would like you to be able to write small pieces of code to do basic data analysis.
+At the end of the course, we would like you to be a somewhat independent coder able to write small pieces of code to do basic (or non basic) data analysis.
 No computation level is required though it is good to keep in mind that at the time being, this notebook alone might not be enough: the teachers are still necessary (unfortunately?) to introduce the concepts and to help answer the potential questions.
 
 ### 1.2 Coding in Python
