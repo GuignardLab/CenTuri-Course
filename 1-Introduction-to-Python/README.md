@@ -13,60 +13,7 @@
 7. [From 1D to 2D](7-From-1D-to-2D.ipynb)
 8. [Playing with the model](8-Playing-with-the-model.ipynb)
 
-## 0. Requirements for the course.
-
-### 0.1 Recommended software
-
-This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.8 or newer.
-
-To install Python and the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
-
-### 0.2 Installing conda
-
-Conda can be installed multiple ways. We do not have any recommendations about how to but one can read [there](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for a likely exhaustive list on ways to install conda. That being said.
-
-Note that we do not necessarily recommend installing Anaconda, we do have a slight preference towards [Miniconda](https://docs.conda.io/en/latest/miniconda.html) but that's just us.
-
-Moreover, we advise to start jupyter notebooks from a shell/terminal/prompt to be able to better see the error messages.
-
-### 0.3 Dependencies
-
-While we tried to keep the dependencies as small as possible, few are still required:
-
-- [Jupyter notebook](https://jupyter.org/)
-- [NumPy](https://numpy.org/)
-- [Scipy](https://scipy.org/)
-- [Matplotlib](https://matplotlib.org/)
-
-To install them one can for example run the following command lines in a terminal, assuming that conda is installed:
-
-```shell
-conda create --name CenTuri-Course
-```
-
-to create the environment for the course. Then:
-
-```shell
-conda activate CenTuri-Course
-```
-
-to activate the course environment. And finally:
-
-```shell
-conda install notebook numpy matplotlib
-```
-
-All dependencies should now be installed!
-
-Enjoy!
-
-### 0.4 Troubleshooting for MacOs M1 chips.
-
-The newly introduced M1 chips in the latest macbooks can create some difficulties for installation.
-
-One way to solve the issue is to install [Miniforge](https://github.com/conda-forge/miniforge) and to then use it as Miniconda.
-
-## 1. Introduction
+## 0. Introduction
 
 **First of, within this course [this page](https://docs.python.org/3/tutorial/index.html) will be mentioned a lot. It is a really good (maybe a bit crude) source for information and it is the official Python page so it should also be quite accurate.**
 
@@ -76,7 +23,7 @@ One way to solve the issue is to install [Miniforge](https://github.com/conda-fo
 - **[IPython Cookbook, Second Edition (2018)](https://ipython-books.github.io/) In depth book about python. While the book is of general interest and definitely worth reading, [that](https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/) part was especially helpful for this course**
 - **[From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) Especially useful when wanting to use Numpy, which you probably should!**
 
-### 1.1 Goal of this course
+### 0.1 Goal of this course
 This course aims at teaching the basics of coding using reaction diffusion simulations as a support, more specifically the Turing patterns. The idea is that eventually you would be able to produce the following animation:
 
 <img src="Images/My-first-Turing-Pattern.gif" alt="Gene Regulation Network" width="200"/>
@@ -86,10 +33,10 @@ Understanding the mathematics or the biology behind the Turing patterns is not n
 At the end of the course, we would like you to be a somewhat independent coder able to write small pieces of code to do basic (or non basic) data analysis.
 No computation level is required though it is good to keep in mind that at the time being, this notebook alone might not be enough: the teachers are still necessary (unfortunately?) to introduce the concepts and to help answer the potential questions.
 
-### 1.2 Coding in Python
+### 0.2 Coding in Python
 The goal of this course is for you to learn the basics of __coding__ in __Python__, but what does that really mean, or more specifically, what do we (the "teachers") mean?
 
-#### 1.2.1 What is coding?
+#### 0.2.1 What is coding?
 Coding is giving a set of instructions to a computer for it to do a task.
 The tasks can be as trivial as:
 ```
@@ -105,7 +52,7 @@ Help proving the 4-colour theorem
 ```
 (see [Computer-assisted proofs](https://en.wikipedia.org/wiki/Computer-assisted_proof))
 
-#### 1.2.2 Programmation language
+#### 0.2.2 Programmation language
 To communicate and give instructions to a computer and mainly the Computer Processing Unit (CPU), it is necessary to write the said instructions in a language that the CPU can indeed understand.
 
 There is an extremely large number of programming languages (635 listed on this [wikipedia page](https://en.wikipedia.org/wiki/List_of_programming_languages)). For example C++, Visual Basic, Java, R, Go, ...
@@ -118,7 +65,7 @@ This choice that was mainly driven by three reasons:
 
 Supporting the previous claims, the [TIOBE Programming Community index rank](https://www.tiobe.com/tiobe-index/) ranks python in the top 3 of the currently most popular programming languages.
 
-#### 1.2.3 What computers are good and not so good at
+#### 0.2.3 What computers are good and not so good at
 It is also important to understand what computers are good at and not so good at.
 Computers have strengths and weaknesses. They are especially good at:
 - performing basic operations: additions, multiplications, ...
@@ -144,7 +91,7 @@ On the flip side, computers are not good at everything. For example, they are ba
 Though, these limitations have been pushed back significantly recently thanks to the artificial intelligence and deep learning revolution:
 One very notable, recent example: [AlphaGO](https://www.deepmind.com/research/highlighted-research/alphago), the first program that beat a human at the GO game. For the first time, computers could have intuition-like behaviours that are better than humans and even that we cannot understand.
 
-#### 1.2.4 Learning a programming language
+#### 0.2.4 Learning a programming language
 Therefore, to code, you need to learn a programming language (here Python).
 Programming languages are all at least somewhat different and have specific rules but most of them rely on a common set of paradigms:
 - they have variables
@@ -154,7 +101,7 @@ Programming languages are all at least somewhat different and have specific rule
 
 Before being able to write some code, it is important to go through these basic and mostly common "rules"
 
-### 1.3 Turing patterns
+### 0.3 Turing patterns
 Now about Turing patterns, they were introduced by Alan Turing in the article [The Chemical Basis of Morphogenesis](https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf).
 They will not be much discussed here but feel free to ask questions or to look over [there](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) for more information.
 
