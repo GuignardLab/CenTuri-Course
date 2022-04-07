@@ -60,3 +60,22 @@ Enjoy!
 The newly introduced M1 chips in the latest macbooks can create some difficulties for installation.
 
 One way to solve the issue is to install [Miniforge](https://github.com/conda-forge/miniforge) and to then use it as Miniconda.
+
+### 0.5 Testing your configuration
+
+If you would like to test your configuration, you can run the following python file: `Configuration-test.py`.
+
+One way to run it is the following:
+
+From a terminal in the folder that contains `Configuration-test.py`:
+```shell
+python Configuration-test.py
+```
+
+You should get an output similar to the following one:
+> You are using Python version (3.10.4). It is recent enough for this course
+> Numpy version (1.21.5) is installed
+> Scipy version (1.8.0) is installed
+> Matplotlib version (3.5.1) is installed
+
+If your python version is too old or if you failed to install one of the libraries
