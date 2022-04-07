@@ -17,7 +17,7 @@
 
 ### 0.1 Recommended software
 
-This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.5 or newer.
+This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.8 or newer.
 
 To install the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
 
@@ -33,7 +33,6 @@ Moreover, we advise to start jupyter notebooks from a shell/terminal/prompt to b
 
 While we tried to keep the dependencies as small as possible, few are still required:
 
-- [Python 3.8 or higher](https://www.python.org/) (please, do not install python from the website but through your conda distribution)
 - [Jupyter notebook](https://jupyter.org/)
 - [NumPy](https://numpy.org/)
 - [Scipy](https://scipy.org/)
