@@ -85,4 +85,4 @@ You should get an output similar to the following one:
 >
 >
 
-If your python version is too old or if you failed to install one of the libraries
+If your python version is too old or if you failed to install one of the libraries, you will get an error message.
