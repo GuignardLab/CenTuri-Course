@@ -81,7 +81,7 @@ You should get an output similar to the following one:
 > 
 > Matplotlib version (3.5.1) is installed
 >
-> 		Everything's good
+>    Everything's good
 >
 >
 
