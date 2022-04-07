@@ -33,6 +33,7 @@ Moreover, we advise to start jupyter notebooks from a shell/terminal/prompt to b
 
 While we tried to keep the dependencies as small as possible, few are still required:
 
+- [Python 3.8 or higher](https://www.python.org/) (please, do not install python from the website but through your conda distribution)
 - [Jupyter notebook](https://jupyter.org/)
 - [NumPy](https://numpy.org/)
 - [Scipy](https://scipy.org/)
