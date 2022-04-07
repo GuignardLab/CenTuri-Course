@@ -11,7 +11,7 @@
 6. [From 0D to 1D](6-1-From-0D-to-1D.ipynb)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.ipynb)
 7. [From 1D to 2D](7-From-1D-to-2D.ipynb)
-8. [Playing with the model](8-Playing-with-the-model.ipynb) $\leftarrow$
+8. [Playing with the model](8-Playing-with-the-model.ipynb)
 
 ## 0. Requirements for the course.
 
