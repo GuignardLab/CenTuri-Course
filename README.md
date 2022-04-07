@@ -74,8 +74,15 @@ python Configuration-test.py
 
 You should get an output similar to the following one:
 > You are using Python version (3.10.4). It is recent enough for this course
+> 
 > Numpy version (1.21.5) is installed
+> 
 > Scipy version (1.8.0) is installed
+> 
 > Matplotlib version (3.5.1) is installed
+>
+> 		Everything's good
+>
+>
 
 If your python version is too old or if you failed to install one of the libraries
