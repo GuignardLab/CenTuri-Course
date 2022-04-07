@@ -19,7 +19,7 @@
 
 This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.8 or newer.
 
-To install the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
+To install Python and the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
 
 ### 0.2 Installing conda
 
