@@ -1,15 +1,15 @@
 # Table of contents
-0. [Introduction](0-Introduction.ipynb)
-1. [Variables](1-Variables.ipynb)
-2. [Data structures](2-Data-Structures.ipynb) $\leftarrow$
-3. [Conditional statements and loops](3-Conditional-Statements-Loops.ipynb)
-4. [Some exercises](4-Some-Exercises.ipynb)
-5. [Introduction to functions](5-0-Introduction-function.ipynb)
-    1. [File manipulation](5-1-File-manipulation.ipynb)
-6. [From 0D to 1D](6-1-From-0D-to-1D.ipynb)
-    1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.ipynb)
-7. [From 1D to 2D](7-From-1D-to-2D.ipynb)
-8. [Playing with the model](8-Playing-with-the-model.ipynb)
+0. [Introduction](0-Introduction.md)
+1. [Variables](1-Variables.md)
+2. [Data structures](2-Data-Structures.md)
+3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
+4. [Some exercises](4-Some-Exercises.md)
+5. [Introduction to functions](5-0-Introduction-function.md)
+    1. [File manipulation](5-1-File-manipulation.md)
+6. [From 0D to 1D](6-1-From-0D-to-1D.md)
+    1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
+7. [From 1D to 2D](7-From-1D-to-2D.md)
+8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 2. Data structures
 ---
