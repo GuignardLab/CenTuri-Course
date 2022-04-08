@@ -1,6 +1,8 @@
+[&larr; previous](0-Introduction.md) - [next &rarr;](2-Data-Structures.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
-1. [Variables](1-Variables.md)
+1. [Variables](1-Variables.md) &larr; we are here
 2. [Data structures](2-Data-Structures.md)
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
@@ -118,3 +120,5 @@ print('after:')
 print(f'{nb1 = }')
 print(f'{nb2 = }')
 ```
+
+[&larr; previous](0-Introduction.md) - [next &rarr;](2-Data-Structures.md)

@@ -1,6 +1,6 @@
-# Table of contents
-[&larr; previous]() - [next &rarr;](1-Variables.md)
+&larr; previous - [next &rarr;](1-Variables.md)
 
+# Table of contents
 0. [Introduction](0-Introduction.md) &larr; we are here
 1. [Variables](1-Variables.md)
 2. [Data structures](2-Data-Structures.md)
@@ -153,3 +153,5 @@ Moreover other values are necessary for the computation also need to be decided:
 - the distance between two cells (ie the space step: `dx` and `dy`)
 - the total time of the simulation (`T`)
 - the number of iterations (`n`, which is determined by the ratio of `T` over `dt`)
+
+&larr; previous - [next &rarr;](1-Variables.md)

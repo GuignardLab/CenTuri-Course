@@ -1,7 +1,9 @@
+[&larr; previous](1-Variables.md) - [next &rarr;](3-Conditional-Statements-Loops.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
-2. [Data structures](2-Data-Structures.md)
+2. [Data structures](2-Data-Structures.md) &larr; we are here
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
@@ -284,3 +286,5 @@ print(f'arr1 determinant -->\n{det}\n')
 print(f'arr1_inv -->\n{arr1_inv}\n')
 print(f'arr1 . arr1_inv -->\n{np.round(arr1 @ arr1_inv)}\n')
 ```
+
+[&larr; previous](1-Variables.md) - [next &rarr;](3-Conditional-Statements-Loops.md)
