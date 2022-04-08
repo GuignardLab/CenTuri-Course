@@ -65,7 +65,7 @@ Write a loop that increments the concentration value of the concentration `a` ac
 
 The function `da_alone` implements the change of concentration (<img src="https://render.githubusercontent.com/render/math?math=\delta a">) according to <img src="https://render.githubusercontent.com/render/math?math=a">, <img src="https://render.githubusercontent.com/render/math?math=\delta t"> and <img src="https://render.githubusercontent.com/render/math?math=k">:
 
-<img src="https://render.githubusercontent.com/render/math?math=">\delta a = \delta t (a - a^3 +k)<img src="https://render.githubusercontent.com/render/math?math=">
+<img src="https://render.githubusercontent.com/render/math?math=\delta a = \delta t (a - a^3 %2B k)">
 
 `da_alone` takes as parameters the initial concentration value <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the <img src="https://render.githubusercontent.com/render/math?math=\delta t"> parameter (`dt`) and the <img src="https://render.githubusercontent.com/render/math?math=k"> parameter (`k`) and outputs the differential of concentration <img src="https://render.githubusercontent.com/render/math?math=\delta a"> for that specific initial concentration.
 
@@ -111,8 +111,8 @@ Now that we know how to compute the evolution of a given concentration, we want 
 
 To do so we can use the functions `da` and `di` that implements the following equations:
 
-<img src="https://render.githubusercontent.com/render/math?math=">\delta a = \delta t(a-a^3-i+k)<img src="https://render.githubusercontent.com/render/math?math=">
-<img src="https://render.githubusercontent.com/render/math?math=">\delta i = \frac{\delta t}{\tau}(a -i)<img src="https://render.githubusercontent.com/render/math?math=">
+<img src="https://render.githubusercontent.com/render/math?math=\delta a = \delta t(a-a^3-i%2B k)">
+<img src="https://render.githubusercontent.com/render/math?math=\delta i = \frac{\delta t}{\tau}(a -i)">
 Note that the function `da` is slightly different to `da_alone` since it incorporates the inhibitor action <img src="https://render.githubusercontent.com/render/math?math=-i">.
 
 The function `da` takes as an input the original concentration <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the time increment parameter <img src="https://render.githubusercontent.com/render/math?math=\delta t"> (`dt`), the constant <img src="https://render.githubusercontent.com/render/math?math=k"> (`k`) as for the function `da_alone` but also the original inhibitor concentration <img src="https://render.githubusercontent.com/render/math?math=i"> (`i`).
