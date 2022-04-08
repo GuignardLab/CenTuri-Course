@@ -1,3 +1,5 @@
+[&larr; previous](5-1-File-manipulation.md) - [next &rarr;](6-2-Adding-lateral-diffusion.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
@@ -6,7 +8,7 @@
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
     1. [File manipulation](5-1-File-manipulation.md)
-6. [From 0D to 1D](6-1-From-0D-to-1D.md)
+6. [From 0D to 1D](6-1-From-0D-to-1D.md) &larr;
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)
 8. [Playing with the model](8-Playing-with-the-model.md)
@@ -324,3 +326,5 @@ A_osci, I_osci = answer_results(13, A=A, I=I, dt=.01, k=.05, tau=2, n=n)
 ```python
 plot_concentration_1D(A_osci, I_osci, step=100)
 ```
+
+[&larr; previous](5-1-File-manipulation.md) - [next &rarr;](6-2-Adding-lateral-diffusion.md)

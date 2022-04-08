@@ -1,3 +1,5 @@
+[&larr; previous](5-0-Introduction-function.md) - [next &rarr;](6-1-From-0D-to-1D.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
@@ -5,7 +7,7 @@
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
-    1. [File manipulation](5-1-File-manipulation.md)
+    1. [File manipulation](5-1-File-manipulation.md) &larr;
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)
@@ -256,3 +258,5 @@ This decomposition allows to identify the important points in the code and to or
 Here, we want to loop on the files (1), check if the file is a file of interest (2), retrieve the value of `k` in the file name (3), create a folder with the `k` value if necessary (4) and move the file in the appropriate folder (5).
         
 Now, one can try to solve the 5 problems independently and ultimately assemble them to answer the question.
+
+[&larr; previous](5-0-Introduction-function.md) - [next &rarr;](6-1-From-0D-to-1D.md)

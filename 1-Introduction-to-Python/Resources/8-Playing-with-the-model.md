@@ -1,3 +1,5 @@
+[&larr; previous](7-From-1D-to-2D.md) - next &rarr;
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
@@ -9,7 +11,7 @@
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)
-8. [Playing with the model](8-Playing-with-the-model.md)
+8. [Playing with the model](8-Playing-with-the-model.md) &larr;
 
 # 8 Playing with the model and its parameters
 
@@ -260,3 +262,5 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
 
 HTML(anim.to_jshtml())
 ```
+
+[&larr; previous](7-From-1D-to-2D.md) - next &rarr;

@@ -3,7 +3,7 @@
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
-2. [Data structures](2-Data-Structures.md) &larr; we are here
+2. [Data structures](2-Data-Structures.md) &larr;
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
@@ -14,7 +14,6 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 2. Data structures
----
 When coding, different data types and data structures can be used. For example we already saw few data types:
 - Integers (referred to as `int` in Python): `0`, `1`, `-10`, ...
 - Floating numbers (referred to as `float` in Python): `0.01`, `1.0`, `1.2e10`, ...

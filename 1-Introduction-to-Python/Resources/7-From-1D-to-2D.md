@@ -1,3 +1,5 @@
+[&larr; previous](6-2-Adding-lateral-diffusion.md) - [next &rarr;](8-Playing-with-the-model.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
@@ -8,7 +10,7 @@
     1. [File manipulation](5-1-File-manipulation.md)
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
-7. [From 1D to 2D](7-From-1D-to-2D.md)
+7. [From 1D to 2D](7-From-1D-to-2D.md) &larr;
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 7. From 1 to 2D!
@@ -321,3 +323,5 @@ HTML(anim.to_jshtml())
 ```python
 anim.save('My-first-Turing-Pattern.gif')
 ```
+
+[&larr; previous](6-2-Adding-lateral-diffusion.md) - [next &rarr;](8-Playing-with-the-model.md)

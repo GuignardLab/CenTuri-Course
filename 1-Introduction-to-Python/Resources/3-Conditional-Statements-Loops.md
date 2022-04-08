@@ -1,8 +1,10 @@
+[&larr; previous](2-Data-Structures.md) - [next &rarr;](4-Some-Exercises.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
 2. [Data structures](2-Data-Structures.md)
-3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
+3. [Conditional statements and loops](3-Conditional-Statements-Loops.md) &larr;
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
     1. [File manipulation](5-1-File-manipulation.md)
@@ -161,3 +163,5 @@ print(f'{i = }, {number_sum = }')
 ```
 
 **More on `for` loops can be found [there](https://docs.python.org/3/tutorial/controlflow.html#for-statements)**
+
+[&larr; previous](2-Data-Structures.md) - [next &rarr;](4-Some-Exercises.md)

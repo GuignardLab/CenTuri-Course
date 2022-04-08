@@ -1,9 +1,11 @@
+[&larr; previous](3-Conditional-Statements-Loops.md) - [next &rarr;](5-0-Introduction-function.md)
+
 # Table of contents
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
 2. [Data structures](2-Data-Structures.md)
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
-4. [Some exercises](4-Some-Exercises.md)
+4. [Some exercises](4-Some-Exercises.md) &larr;
 5. [Introduction to functions](5-0-Introduction-function.md)
     1. [File manipulation](5-1-File-manipulation.md)
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
@@ -156,3 +158,5 @@ Now, you can call the function `plot_concentration_1cell` with input `A` and `I`
 A, I = answer_results(4, A=0.4, I=0.15, dt=dt, k=k, tau=tau, n=n)
 plot_concentration_1cell(A, I)
 ```
+
+[&larr; previous](3-Conditional-Statements-Loops.md) - [next &rarr;](5-0-Introduction-function.md)
