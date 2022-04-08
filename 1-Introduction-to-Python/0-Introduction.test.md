@@ -1,26 +1,3 @@
----
-jupyter:
-  jupytext:
-    formats: ipynb,md
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.10.4
-  nbformat: 4
-  nbformat_minor: 5
----
-
-::: {.cell .markdown}
 # Table of contents
 
 1.  [Introduction](0-Introduction.ipynb) <img src="https://render.githubusercontent.com/render/math?math=\leftarrow">
@@ -34,13 +11,9 @@ jupyter:
     1.  [Adding lateral diffusion](6-2-Adding-lateral-diffusion.ipynb)
 8.  [From 1D to 2D](7-From-1D-to-2D.ipynb)
 9.  [Playing with the model](8-Playing-with-the-model.ipynb)
-:::
 
-::: {.cell .markdown}
 # Introduction to Python with Turing patterns
-:::
 
-::: {.cell .markdown}
 ## \#\# 0. Introduction {#-0-introduction}
 
 **First of, within this course [this page](https://docs.python.org/3/tutorial/index.html) will be mentioned a lot. It is a really good (maybe a bit crude) source for information and it is the official Python page so it should also be quite accurate.**
@@ -51,9 +24,7 @@ jupyter:
 
 -   **[IPython Cookbook, Second Edition (2018)](https://ipython-books.github.io/) In depth book about python. While the book is of general interest and definitely worth reading, [that](https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/) part was especially helpful for this course**
 -   **[From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) Especially useful when wanting to use Numpy, which you probably should!**
-:::
 
-::: {.cell .markdown}
 ### 0.1 Goal of this course {#01-goal-of-this-course}
 
 This course aims at teaching the basics of coding using reaction diffusion simulations as a support, more specifically the Turing patterns.
@@ -61,9 +32,7 @@ Understanding the mathematics or the biology behind the Turing patterns is not n
 
 At the end of the course, we would like you to be able to write small pieces of code to do basic data analysis.
 No computation level is required though it is good to keep in mind that at the time being, this notebook alone might not be enough: the teachers are still necessary (unfortunately?) to introduce the concepts and to help answer the potential questions.
-:::
 
-::: {.cell .markdown}
 ### 0.2 Coding in Python {#02-coding-in-python}
 
 The goal of this course is for you to learn the basics of **coding** in **Python**, but what does that really mean, or more specifically, what do we (the \"teachers\") mean?
@@ -140,9 +109,7 @@ Programming languages are all at least somewhat different and have specific rule
 -   they have functions (not always)
 
 Before being able to write some code, it is important to go through these basic and mostly common \"rules\"
-:::
 
-::: {.cell .markdown}
 ### 0.3 Turing patterns {#03-turing-patterns}
 
 Now about Turing patterns, they were introduced by Alan Turing in the article [The Chemical Basis of Morphogenesis](https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf).
@@ -200,4 +167,3 @@ Moreover other values are necessary for the computation also need to be decided:
 -   the distance between two cells (ie the space step: `dx` and `dy`)
 -   the total time of the simulation (`T`)
 -   the number of iterations (`n`, which is determined by the ratio of `T` over `dt`)
-:::
