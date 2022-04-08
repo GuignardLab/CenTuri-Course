@@ -1,4 +1,4 @@
-&larr; previous - [next &rarr;](1-Variables.md)
+&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](1-Variables.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md) &larr; ([Notebook](../0-Introduction.ipynb))
@@ -16,7 +16,7 @@
 # Introduction to Python with Turing patterns
 
 ## 0. Introduction
----
+
 **First of, within this course [this page](https://docs.python.org/3/tutorial/index.html) will be mentioned a lot. It is a really good (maybe a bit crude) source for information and it is the official Python page so it should also be quite accurate.**
 
 **Moreover, if you would like to read more about python, you can find a good list of books about Python [there](https://wiki.python.org/moin/PythonBooks) (not all of them are free).**

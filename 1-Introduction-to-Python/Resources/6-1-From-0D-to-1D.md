@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 6. From 0D to 1D!
----
+
 Now, back to our Turing patterns!
 
 We have seen how to model the concentration of an activator and inhibitor when they are expressed simultaneously.

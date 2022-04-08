@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 1. Variables
----
+
 Variables are symbolic names where information or values can be stored.
 
 They are the cornerstone of coding, they allow you to store in memory values and to access them later on. In our example the variables have been described earlier (`mu_a`, `tau`, `size`, ...)

@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 3. Conditional statements and loops
----
+
 ### 3.1 Conditional statements
 Another important part of coding are the conditional statements.
 
@@ -76,7 +76,7 @@ else:
 ```
 
 ### 3.2 Loops
----
+
 Loops are probably the core of coding! They are the reason why computers are so useful!
 
 In Python two types of loops exist: the `for` loop and the `while` loop.

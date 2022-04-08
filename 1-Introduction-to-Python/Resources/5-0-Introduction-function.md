@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 5. Introduction to functions
----
+
 You have seen some functions previously, for example the functions `print`, `eval`, `input` or `range` for example which are `builtin` functions, functions that are "in" Python. You've also seen the functions `answer`, `hint`, `da_alone`, `da` or `di` which are function that have been imported (here via the commands `from Resources.UsefulFunctions import *` and `from Resources.Answers import answer, hint`)
 
 A function is a piece of code that can be called at any time once defined. Functions are especially useful as you may have noticed, when you know that you will want to call a piece of code multiple times, maybe with different inputs. For example, you called the function `print` with many different inputs.

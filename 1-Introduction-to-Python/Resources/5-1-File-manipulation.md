@@ -1,4 +1,4 @@
-[&larr; previous](5-0-Introduction-function.md) - [next &rarr;](6-1-From-0D-to-1D.md)
+[&larr; previous](5-0-Introduction-function.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](6-1-From-0D-to-1D.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)

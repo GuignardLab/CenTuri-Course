@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 7. From 1 to 2D!
----
+
 Now, we've seen diffusion in 1 dimension, expanding it to 2 dimensions is not that complicated.
 
 First we need to create our array of cells. This is an array of dimension `(size, size, n)`. We will therefore have `size*size` cells over `n` time-points:
@@ -240,7 +240,7 @@ def compute_turing(dt, k, tau, size, T,
 ```
 
 ## Displaying the result
----
+
 We can now display the result of our modeling using matplotlib.
 
 Though it is not completely trivial since it is a 3D data (2D + time).

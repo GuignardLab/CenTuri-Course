@@ -14,7 +14,7 @@
 8. [Playing with the model](8-Playing-with-the-model.md)
 
 ## 4. Some exercises
----
+
 Now, you should have enough to go through a small batch of exercises 🥳 🥳 🥳.
 
 They might be a bit hard, but that's normal, please don't hesitate to ask us if you have any trouble understanding something.
