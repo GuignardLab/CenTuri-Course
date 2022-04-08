@@ -13,7 +13,7 @@
 7. [From 1D to 2D](7-From-1D-to-2D.md)
 8. [Playing with the model](8-Playing-with-the-model.md) &larr; ([Notebook](../8-Playing-with-the-model.ipynb))
 
-# 8 Playing with the model and its parameters
+# 8. Playing with the model and its parameters
 
 
 ```python
