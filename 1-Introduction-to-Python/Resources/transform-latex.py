@@ -12,7 +12,7 @@ def rewrite(text):
         sub = text[found.start()+2:found.end()-2]
         sub = sub.strip().replace('+', '%2B ')
         text = (text[:found.start()] +
-                f'<img src="https://render.githubusercontent.com/render/math?math={sub}">' +
+                f'<img src="https://render.githubusercontent.com/render/math?math={sub}">\n' +
                 text[found.end():])
         found = regexp_1.search(text)
     
