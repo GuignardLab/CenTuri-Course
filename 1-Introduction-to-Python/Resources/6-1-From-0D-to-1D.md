@@ -286,7 +286,7 @@ else:
 ```
 
 Now, the concentration over time of the activator or the inhibitor of each cell are in the arrays `A` and `I`.
-You can plot these values for each cell using the previously shown function `plot_concentration_1cell`. Here is an example for the 50$^{th}$ and 3$^{rd}$ cells:
+You can plot these values for each cell using the previously shown function `plot_concentration_1cell`. Here is an example for the 50<img src="https://render.githubusercontent.com/render/math?math=^{th}"> and 3<img src="https://render.githubusercontent.com/render/math?math=^{rd}"> cells:
 
 
 ```python

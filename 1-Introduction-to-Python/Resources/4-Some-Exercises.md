@@ -63,11 +63,11 @@ Before creating a working 2D Turing pattern, let work out how to make the concen
 ### Exercise 3
 Write a loop that increments the concentration value of the concentration `a` according to the function `da_alone`.
 
-The function `da_alone` implements the change of concentration ($\delta a$) according to $a$, $\delta t$ and $k$:
+The function `da_alone` implements the change of concentration (<img src="https://render.githubusercontent.com/render/math?math=\delta a">) according to <img src="https://render.githubusercontent.com/render/math?math=a">, <img src="https://render.githubusercontent.com/render/math?math=\delta t"> and <img src="https://render.githubusercontent.com/render/math?math=k">:
 
-$$\delta a = \delta t (a - a^3 +k)$$
+<img src="https://render.githubusercontent.com/render/math?math=">\delta a = \delta t (a - a^3 +k)<img src="https://render.githubusercontent.com/render/math?math=">
 
-`da_alone` takes as parameters the initial concentration value $a$ (`a`), the $\delta t$ parameter (`dt`) and the $k$ parameter (`k`) and outputs the differential of concentration $\delta a$ for that specific initial concentration.
+`da_alone` takes as parameters the initial concentration value <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the <img src="https://render.githubusercontent.com/render/math?math=\delta t"> parameter (`dt`) and the <img src="https://render.githubusercontent.com/render/math?math=k"> parameter (`k`) and outputs the differential of concentration <img src="https://render.githubusercontent.com/render/math?math=\delta a"> for that specific initial concentration.
 
 
 ```python
@@ -111,13 +111,13 @@ Now that we know how to compute the evolution of a given concentration, we want 
 
 To do so we can use the functions `da` and `di` that implements the following equations:
 
-$$\delta a = \delta t(a-a^3-i+k)$$
-$$\delta i = \frac{\delta t}{\tau}(a -i)$$
-Note that the function `da` is slightly different to `da_alone` since it incorporates the inhibitor action $-i$.
+<img src="https://render.githubusercontent.com/render/math?math=">\delta a = \delta t(a-a^3-i+k)<img src="https://render.githubusercontent.com/render/math?math=">
+<img src="https://render.githubusercontent.com/render/math?math=">\delta i = \frac{\delta t}{\tau}(a -i)<img src="https://render.githubusercontent.com/render/math?math=">
+Note that the function `da` is slightly different to `da_alone` since it incorporates the inhibitor action <img src="https://render.githubusercontent.com/render/math?math=-i">.
 
-The function `da` takes as an input the original concentration $a$ (`a`), the time increment parameter $\delta t$ (`dt`), the constant $k$ (`k`) as for the function `da_alone` but also the original inhibitor concentration $i$ (`i`).
+The function `da` takes as an input the original concentration <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the time increment parameter <img src="https://render.githubusercontent.com/render/math?math=\delta t"> (`dt`), the constant <img src="https://render.githubusercontent.com/render/math?math=k"> (`k`) as for the function `da_alone` but also the original inhibitor concentration <img src="https://render.githubusercontent.com/render/math?math=i"> (`i`).
 
-The function `di` takes as an input the original concentration $i$ (`i`), the time increment parameter $\delta t$, the constant $\tau$ (`tau`) and the original activator concentration $a$ (`a`).
+The function `di` takes as an input the original concentration <img src="https://render.githubusercontent.com/render/math?math=i"> (`i`), the time increment parameter <img src="https://render.githubusercontent.com/render/math?math=\delta t">, the constant <img src="https://render.githubusercontent.com/render/math?math=\tau"> (`tau`) and the original activator concentration <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`).
 
 **Write code to store in two lists the evolution of the concentrations of the activator and the inhibitor.**
 

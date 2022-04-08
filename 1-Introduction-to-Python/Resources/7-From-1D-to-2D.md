@@ -81,7 +81,7 @@ We then need to subtract 4 times the value at the concentration of that cell, th
 diff_A[i, j] = diff_A[i, j] - 4*A[i, j, t-1]
 ```
 
-This value needs to be normalised by the diffusion coefficient $mu_a$ or $mu_i$, the time step $\delta t$ and the spatial resolution in x and y $\delta x$ and $\delta y$:
+This value needs to be normalised by the diffusion coefficient <img src="https://render.githubusercontent.com/render/math?math=mu_a"> or <img src="https://render.githubusercontent.com/render/math?math=mu_i">, the time step <img src="https://render.githubusercontent.com/render/math?math=\delta t"> and the spatial resolution in x and y <img src="https://render.githubusercontent.com/render/math?math=\delta x"> and <img src="https://render.githubusercontent.com/render/math?math=\delta y">:
 ```python
 diff_A[i, j] = dt*mu_a(  A[i-1, j  , t-1]
                        + A[i+1, j  , t-1]

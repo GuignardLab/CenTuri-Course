@@ -171,7 +171,7 @@ print(f'{d1 = }')
 You can find more information about dictionaries [there](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 ### 2.3 The numpy arrays `ndarray`
-A very useful data structure is the `ndarray` from [NumPy](https://numpy.org/). It is usually very fast and allows you to manipulate arrays of $n$ dimensions (hence the name).
+A very useful data structure is the `ndarray` from [NumPy](https://numpy.org/). It is usually very fast and allows you to manipulate arrays of <img src="https://render.githubusercontent.com/render/math?math=n"> dimensions (hence the name).
 
 `ndarray` are complex data structures and we will not go in depth into what you can do with them here, we will only look at what we need along the class.
 > _**To go a little bit further (not required):**_
