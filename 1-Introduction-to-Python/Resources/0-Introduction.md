@@ -113,7 +113,7 @@ First, we will be talking about an activator that will name <img src="https://re
 
 The gene regulation network that we are considering here is the simple one where <img src="https://render.githubusercontent.com/render/math?math=A"> auto-activates and activates <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=I"> inhibits <img src="https://render.githubusercontent.com/render/math?math=A">:
 
-<img src="Images/GRN.png" alt="Gene Regulation Network" width="200"/>
+<img src="../Images/GRN.png" alt="Gene Regulation Network" width="200"/>
 
 > _**To go a little bit further (not required):**_
 >

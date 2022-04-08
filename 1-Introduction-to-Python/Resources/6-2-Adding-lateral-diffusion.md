@@ -30,7 +30,7 @@ Therefore, after diffusion for a given time <img src="https://render.githubuserc
 
 
 We tried to explain that with the following figure:
-<img src="Images/Diffusion.png" alt="Diffusion" width="500"/>
+<img src="../Images/Diffusion.png" alt="Diffusion" width="500"/>
 
 Now that we have explained the theory (which might look a bit scary at first glance), let's see how we can implement that in practice.
 
