@@ -25,7 +25,7 @@ Now, if <img src="https://render.githubusercontent.com/render/math?math=a_x"> is
 
 
 
-Therefore, after diffusion for a given time <img src="https://render.githubusercontent.com/render/math?math=\delta t">, the concentration <img src="https://render.githubusercontent.com/render/math?math=a_x"> becomes is:
+Therefore, after diffusion for a given time <img src="https://render.githubusercontent.com/render/math?math=\delta t">, the concentration <img src="https://render.githubusercontent.com/render/math?math=a_x"> is:
 <img src="https://render.githubusercontent.com/render/math?math=a_{x, t%2B \delta t} = a_{x, t} %2B  \delta t\mu_a\Delta a_{x,t} = a_{x,t} %2B  \delta t\mu_a \frac{a_{x%2B \delta x, t} %2B  a_{x-\delta x, t} - 2a_{x, t}}{\delta x}">
 
 
