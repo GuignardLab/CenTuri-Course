@@ -1,5 +1,7 @@
 # Table of contents
-0. [Introduction](0-Introduction.md)
+[&larr; previous]() - [next &rarr;](1-Variables.md)
+
+0. [Introduction](0-Introduction.md) &larr; we are here
 1. [Variables](1-Variables.md)
 2. [Data structures](2-Data-Structures.md)
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
