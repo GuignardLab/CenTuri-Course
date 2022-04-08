@@ -8,7 +8,7 @@
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
     1. [File manipulation](5-1-File-manipulation.md)
-6. [From 0D to 1D](6-1-From-0D-to-1D.md) &larr;
+6. [From 0D to 1D](6-1-From-0D-to-1D.md) &larr; ([Notebook](../6-1-From-0D-to-1D.ipynb))
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)
 8. [Playing with the model](8-Playing-with-the-model.md)

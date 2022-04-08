@@ -11,7 +11,7 @@
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)
-8. [Playing with the model](8-Playing-with-the-model.md) &larr;
+8. [Playing with the model](8-Playing-with-the-model.md) &larr; ([Notebook](../8-Playing-with-the-model.ipynb))
 
 # 8 Playing with the model and its parameters
 

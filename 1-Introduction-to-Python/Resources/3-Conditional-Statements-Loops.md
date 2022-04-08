@@ -4,7 +4,7 @@
 0. [Introduction](0-Introduction.md)
 1. [Variables](1-Variables.md)
 2. [Data structures](2-Data-Structures.md)
-3. [Conditional statements and loops](3-Conditional-Statements-Loops.md) &larr;
+3. [Conditional statements and loops](3-Conditional-Statements-Loops.md) &larr; ([Notebook](../3-Conditional-Statements-Loops.ipynb))
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
     1. [File manipulation](5-1-File-manipulation.md)

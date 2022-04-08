@@ -7,7 +7,7 @@
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
 5. [Introduction to functions](5-0-Introduction-function.md)
-    1. [File manipulation](5-1-File-manipulation.md) &larr;
+    1. [File manipulation](5-1-File-manipulation.md) &larr; ([Notebook](../5-1-File-manipulation.ipynb))
 6. [From 0D to 1D](6-1-From-0D-to-1D.md)
     1. [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
 7. [From 1D to 2D](7-From-1D-to-2D.md)

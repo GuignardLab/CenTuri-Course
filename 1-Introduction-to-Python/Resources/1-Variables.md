@@ -2,7 +2,7 @@
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
-1. [Variables](1-Variables.md) &larr;
+1. [Variables](1-Variables.md) &larr; ([Notebook](../1-Variables.ipynb))
 2. [Data structures](2-Data-Structures.md)
 3. [Conditional statements and loops](3-Conditional-Statements-Loops.md)
 4. [Some exercises](4-Some-Exercises.md)
