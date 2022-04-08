@@ -1,5 +1,4 @@
 #!python
-
 from pathlib import Path
 import argparse
 import re
@@ -29,9 +28,9 @@ def rewrite(text):
     return text
     
 
-def parse_files(path):
+def parse_files(path, file_type='md'):
     if path.is_dir():
-        files = path.glob('*.md')
+        files = path.glob(f'*.{file_type}')
     else:
         files = [path]
     return files
@@ -43,12 +42,21 @@ if __name__ == '__main__':
                         help='Path to the folder containing the markdown files, or a markdown itself')
     parser.add_argument('-s', '--suffix', dest='s', type=str, default='',
                         help='Suffix to add at the end of the name of the modified file.\n If not provided, the files will be modified in place')
+    parser.add_argument('-t', '--type', dest='t', type=str, default='md', choices=['md', 'ipynb', 'nb'],
+                        help='Whether to process markdown files directly (option \'md\') or notebooks (options \'ipynb\' or \'nb\')')
     args = parser.parse_args()
     p = Path(args.p)
-    files = parse_files(p)
+    if args.t == 'nb':
+        args.t = 'ipynb'
+    files = parse_files(p, args.t)
     for file in files:
-        with open(file, 'r') as f:
-            text = f.read()
+        if args.t == 'ipynb':
+            from jupytext import jupytext
+            text = jupytext.read(file)
+            text = jupytext.notebook_to_md(text)
+        else:
+            with open(file, 'r') as f:
+                text = f.read()
         text = rewrite(text)
-        with open(file, 'w') as f:
+        with open(file.with_suffix(f'.{args.s}.md'), 'w') as f:
             f.write(text)
