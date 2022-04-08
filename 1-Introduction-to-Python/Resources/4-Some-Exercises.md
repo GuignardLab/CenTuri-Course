@@ -67,6 +67,8 @@ The function `da_alone` implements the change of concentration (<img src="https:
 
 <img src="https://render.githubusercontent.com/render/math?math=\delta a = \delta t (a - a^3 %2B k)">
 
+
+
 `da_alone` takes as parameters the initial concentration value <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the <img src="https://render.githubusercontent.com/render/math?math=\delta t"> parameter (`dt`) and the <img src="https://render.githubusercontent.com/render/math?math=k"> parameter (`k`) and outputs the differential of concentration <img src="https://render.githubusercontent.com/render/math?math=\delta a"> for that specific initial concentration.
 
 
@@ -112,7 +114,10 @@ Now that we know how to compute the evolution of a given concentration, we want 
 To do so we can use the functions `da` and `di` that implements the following equations:
 
 <img src="https://render.githubusercontent.com/render/math?math=\delta a = \delta t(a-a^3-i%2B k)">
+
+
 <img src="https://render.githubusercontent.com/render/math?math=\delta i = \frac{\delta t}{\tau}(a -i)">
+
 
 Note that the function `da` is slightly different to `da_alone` since it incorporates the inhibitor action <img src="https://render.githubusercontent.com/render/math?math=-i">.
 
