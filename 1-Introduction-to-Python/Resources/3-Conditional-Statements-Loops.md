@@ -1,4 +1,4 @@
-[&larr; previous](2-Data-Structures.md) - [next &rarr;](4-Some-Exercises.md)
+[&larr; previous](2-Data-Structures.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](4-Some-Exercises.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -164,4 +164,4 @@ print(f'{i = }, {number_sum = }')
 
 **More on `for` loops can be found [there](https://docs.python.org/3/tutorial/controlflow.html#for-statements)**
 
-[&larr; previous](2-Data-Structures.md) - [next &rarr;](4-Some-Exercises.md)
+[&larr; previous](2-Data-Structures.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](4-Some-Exercises.md)

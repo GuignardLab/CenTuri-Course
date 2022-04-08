@@ -1,4 +1,4 @@
-[&larr; previous](5-1-File-manipulation.md) - [next &rarr;](6-2-Adding-lateral-diffusion.md)
+[&larr; previous](5-1-File-manipulation.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](6-2-Adding-lateral-diffusion.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -327,4 +327,4 @@ A_osci, I_osci = answer_results(13, A=A, I=I, dt=.01, k=.05, tau=2, n=n)
 plot_concentration_1D(A_osci, I_osci, step=100)
 ```
 
-[&larr; previous](5-1-File-manipulation.md) - [next &rarr;](6-2-Adding-lateral-diffusion.md)
+[&larr; previous](5-1-File-manipulation.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](6-2-Adding-lateral-diffusion.md)

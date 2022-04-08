@@ -1,4 +1,4 @@
-[&larr; previous](7-From-1D-to-2D.md) - next &rarr;
+[&larr; previous](7-From-1D-to-2D.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - next &rarr;
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -263,4 +263,4 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
 HTML(anim.to_jshtml())
 ```
 
-[&larr; previous](7-From-1D-to-2D.md) - next &rarr;
+[&larr; previous](7-From-1D-to-2D.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - next &rarr;

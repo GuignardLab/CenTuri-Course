@@ -1,4 +1,4 @@
-[&larr; previous](4-Some-Exercises.md) - [next &rarr;](5-1-File-manipulation.md)
+[&larr; previous](4-Some-Exercises.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](5-1-File-manipulation.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -164,4 +164,4 @@ def foo(a: int, b: np.ndarray, c: bool, d: str) -> (dict, list, float):
 foo?
 ```
 
-[&larr; previous](4-Some-Exercises.md) - [next &rarr;](5-1-File-manipulation.md)
+[&larr; previous](4-Some-Exercises.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](5-1-File-manipulation.md)
