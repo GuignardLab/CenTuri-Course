@@ -113,6 +113,7 @@ To do so we can use the functions `da` and `di` that implements the following eq
 
 <img src="https://render.githubusercontent.com/render/math?math=\delta a = \delta t(a-a^3-i%2B k)">
 <img src="https://render.githubusercontent.com/render/math?math=\delta i = \frac{\delta t}{\tau}(a -i)">
+
 Note that the function `da` is slightly different to `da_alone` since it incorporates the inhibitor action <img src="https://render.githubusercontent.com/render/math?math=-i">.
 
 The function `da` takes as an input the original concentration <img src="https://render.githubusercontent.com/render/math?math=a"> (`a`), the time increment parameter <img src="https://render.githubusercontent.com/render/math?math=\delta t"> (`dt`), the constant <img src="https://render.githubusercontent.com/render/math?math=k"> (`k`) as for the function `da_alone` but also the original inhibitor concentration <img src="https://render.githubusercontent.com/render/math?math=i"> (`i`).
