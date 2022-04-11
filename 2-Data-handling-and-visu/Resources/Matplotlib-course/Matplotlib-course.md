@@ -866,7 +866,7 @@ mpl.cm.get_cmap('Spectral')
 ### Exercice:
 Make a plot that resemble the following one:
 
-![](Resources/exercice_1.png)
+![](../exercice_1.png)
 
 To do so you will need to use the parameter `zorder` from `ax.plot` and `ax.fill_between`.
 You can find some documentation [there](https://matplotlib.org/stable/gallery/misc/zorder_demo.html).
