@@ -57,7 +57,7 @@ plt.plot(Y)
 
 
 
-    [<matplotlib.lines.Line2D at 0x1201a0e50>]
+    [<matplotlib.lines.Line2D at 0x10a7b4e20>]
 
 
 
@@ -81,7 +81,7 @@ plt.plot(X, Y)
 
 
 
-    [<matplotlib.lines.Line2D at 0x120297190>]
+    [<matplotlib.lines.Line2D at 0x10a8f6f20>]
 
 
 
@@ -101,7 +101,7 @@ plt.plot(X, Y, marker='o', linestyle='', color='red')
 
 
 
-    [<matplotlib.lines.Line2D at 0x12050f1f0>]
+    [<matplotlib.lines.Line2D at 0x10a96ad10>]
 
 
 
@@ -123,7 +123,7 @@ plt.plot(X, Y, 'or')
 
 
 
-    [<matplotlib.lines.Line2D at 0x12057af20>]
+    [<matplotlib.lines.Line2D at 0x10a9d2650>]
 
 
 
@@ -141,7 +141,7 @@ plt.plot(X, Y, 'b-.>')
 
 
 
-    [<matplotlib.lines.Line2D at 0x1205dec80>]
+    [<matplotlib.lines.Line2D at 0x10aa3a020>]
 
 
 
@@ -169,7 +169,7 @@ ax.plot(X, Y)
 
 
 
-    [<matplotlib.lines.Line2D at 0x12074eb60>]
+    [<matplotlib.lines.Line2D at 0x10aaaa410>]
 
 
 
@@ -190,7 +190,7 @@ ax.plot(X, Y)
 
 
 
-    [<matplotlib.lines.Line2D at 0x1207b6350>]
+    [<matplotlib.lines.Line2D at 0x10ab0dc60>]
 
 
 
@@ -305,7 +305,7 @@ ax[1].plot(X2, Y2, '-')
 
 
 
-    [<matplotlib.lines.Line2D at 0x1305dbbe0>]
+    [<matplotlib.lines.Line2D at 0x10fedf4c0>]
 
 
 
@@ -332,7 +332,7 @@ ax[1].plot(X2, Y2, '-')
 
 
 
-    [<matplotlib.lines.Line2D at 0x1307b9030>]
+    [<matplotlib.lines.Line2D at 0x10ffc06d0>]
 
 
 
@@ -359,7 +359,7 @@ ax[1].plot(X2, Y2, '-')
 
 
 
-    [<matplotlib.lines.Line2D at 0x137069f30>]
+    [<matplotlib.lines.Line2D at 0x13a8716c0>]
 
 
 
@@ -378,7 +378,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.legend()
@@ -387,7 +387,7 @@ ax.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x1370df250>
+    <matplotlib.legend.Legend at 0x10fff8130>
 
 
 
@@ -406,7 +406,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -416,7 +416,7 @@ ax.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x13714a650>
+    <matplotlib.legend.Legend at 0x13a944250>
 
 
 
@@ -446,7 +446,7 @@ with plt.style.context('seaborn-paper'):
     Y1 = np.sin(X1*2)/2
     Y2 = np.cos(X2)
 
-    fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+    fig, ax = plt.subplots(figsize=(10, 3))
     ax.plot(X1, Y1, '-', label='sin', lw=5)
     ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
     ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -488,7 +488,7 @@ with plt.style.context('dark_background'):
     Y1 = np.sin(X1*2)/2
     Y2 = np.cos(X2)
 
-    fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+    fig, ax = plt.subplots(figsize=(10, 3))
     ax.plot(X1, Y1, '-', label='sin', lw=5)
     ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
     ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -592,7 +592,8 @@ If you made too many changes and you do not remember what were the original sett
 
 
 ```python
-mpl.rcdefaults()
+# mpl.rcdefaults()
+mpl.rcParams['lines.linestyle'] = '-'
 ```
 
 
@@ -624,7 +625,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -651,7 +652,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -675,7 +676,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -702,7 +703,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -749,7 +750,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -772,7 +773,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -799,7 +800,7 @@ X2 = np.linspace(0, 2*np.pi)
 Y1 = np.sin(X1*2)/2
 Y2 = np.cos(X2)
 
-fig, ax = plt.subplots(figsize=(10, 3), sharex=True, sharey=True)
+fig, ax = plt.subplots(figsize=(10, 3))
 ax.plot(X1, Y1, '-', label='sin', lw=5)
 ax.plot(X2, Y2, '-', label='cosin', lw=3, alpha=.5)
 ax.fill_between(X1[5:30], Y1[5:30], Y2[5:30], color='y')
@@ -855,12 +856,13 @@ While, unfortunately, I don't know a way of listing all the available colormaps 
 ```python
 mpl.cm.get_cmap('Spectral')
 ```
-Here the output is missing in the website for other reasons
+
+Here, the output is missing for the website, buggy otherwise.
 
 ### Exercice:
 Make a plot that resemble the following one:
 
-![](../exercice_1.png)
+![](Resources/exercice_1.png)
 
 To do so you will need to use the parameter `zorder` from `ax.plot` and `ax.fill_between`.
 You can find some documentation [there](https://matplotlib.org/stable/gallery/misc/zorder_demo.html).
@@ -871,51 +873,12 @@ You can find in `Resources.UsefulFunctions` the function `build_curve` to help y
 ```python
 np.random.seed(1)
 from Resources.UsefulFunctions import build_curve
-nb_plots = 50
-max_height = 5
-min_height = 1
-length = 500
-freq = .03
-sigma = 3
-start = 25
-start_freq = .25
-cmap = mpl.cm.get_cmap("Spectral")
-fig, ax = plt.subplots(figsize=(10, 8))
-for i in range(nb_plots):
-    Y = build_curve(length, freq, min_height, max_height,
-                    start, start_freq, sigma)
-    X = np.linspace(0, 10, len(Y))
-    ax.plot(X, 3 * Y + i, color="k", linewidth=5, zorder=nb_plots - i)
-    ax.plot(X, [i]*len(Y), color="k", linewidth=5, zorder=nb_plots - i)
-    color = cmap(i / nb_plots)
-    ax.fill_between(X, 3 * Y + i, i, color=color, zorder=nb_plots - i)
-    
-ax.yaxis.set_tick_params(tick1On=False)
-ax.set_xlim(0, 10)
-ax.set_ylim(-1, nb_plots+max_height)
-ax.axvline(10*start/100, ls="--", lw=0.75, color="black", zorder=250)
-ax.set_xticks(range(1, 10, 2))
-ax.spines['bottom'].set_bounds(1, 9)
-ax.yaxis.set_tick_params(labelleft=True)
-ax.set_yticks(np.arange(nb_plots))
-ax.set_yticklabels([f"Trace {i:02d}" for i in range(1, nb_plots+1)])
-ax.set_xlabel(r'Time [$min$] (fake)')
-for tick in ax.yaxis.get_major_ticks():
-    tick.label.set_fontsize(10)
-    tick.label.set_verticalalignment("bottom")
-    
-ax.spines['right'].set_visible(False)
-ax.spines['top'].set_visible(False)
-ax.spines['left'].set_visible(False)
-# Here is the offset
-ax.spines['bottom'].set_position(('outward', 2))
-
-fig.tight_layout()
-fig.savefig('Resources/exercice_1.png')
+...
 ```
 
 
-    
-![png](output_70_0.png)
-    
+
+
+    Ellipsis
+
 

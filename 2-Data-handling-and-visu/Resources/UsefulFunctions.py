@@ -34,6 +34,49 @@ def __build_curve(length=500, freq=.03,
     curve = gaussian_filter1d(curve, sigma=sigma)
     return curve
 
+def __solution():
+    nb_plots = 50
+    max_height = 5
+    min_height = 1
+    length = 500
+    freq = .03
+    sigma = 3
+    start = 25
+    start_freq = .25
+    cmap = mpl.cm.get_cmap("Spectral")
+    fig, ax = plt.subplots(figsize=(10, 8))
+    for i in range(nb_plots):
+        Y = build_curve(length, freq, min_height, max_height,
+                        start, start_freq, sigma)
+        X = np.linspace(0, 10, len(Y))
+        ax.plot(X, 3 * Y + i, color="k", linewidth=5, zorder=nb_plots - i)
+        ax.plot(X, [i]*len(Y), color="k", linewidth=5, zorder=nb_plots - i)
+        color = cmap(i / nb_plots)
+        ax.fill_between(X, 3 * Y + i, i, color=color, zorder=nb_plots - i)
+        
+    ax.yaxis.set_tick_params(tick1On=False)
+    ax.set_xlim(0, 10)
+    ax.set_ylim(-1, nb_plots+max_height)
+    ax.axvline(10*start/100, ls="--", lw=0.75, color="black", zorder=250)
+    ax.set_xticks(range(1, 10, 2))
+    ax.spines['bottom'].set_bounds(1, 9)
+    ax.yaxis.set_tick_params(labelleft=True)
+    ax.set_yticks(np.arange(nb_plots))
+    ax.set_yticklabels([f"Trace {i:02d}" for i in range(1, nb_plots+1)])
+    ax.set_xlabel(r'Time [$min$] (fake)')
+    for tick in ax.yaxis.get_major_ticks():
+        tick.label.set_fontsize(10)
+        tick.label.set_verticalalignment("bottom")
+        
+    ax.spines['right'].set_visible(False)
+    ax.spines['top'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    # Here is the offset
+    ax.spines['bottom'].set_position(('outward', 2))
+
+    fig.tight_layout()
+    fig.savefig('Resources/exercice_1.png')
+
 def build_curve(length=500, freq=.03,
                 min_height=1, max_height=10,
                 start=15, start_freq=.25,
