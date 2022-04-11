@@ -855,13 +855,7 @@ While, unfortunately, I don't know a way of listing all the available colormaps 
 ```python
 mpl.cm.get_cmap('Spectral')
 ```
-
-
-
-
-<div style="vertical-align: middle;"><strong>Spectral</strong> </div><div class="cmap"><img alt="Spectral colormap" title="Spectral" style="border: 1px solid #555;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAABACAYAAABsv8+/AAAAF3RFWHRUaXRsZQBTcGVjdHJhbCBjb2xvcm1hcI/oV9sAAAAddEVYdERlc2NyaXB0aW9uAFNwZWN0cmFsIGNvbG9ybWFwppaw8gAAADB0RVh0QXV0aG9yAE1hdHBsb3RsaWIgdjMuNS4xLCBodHRwczovL21hdHBsb3RsaWIub3Jn97fOzwAAADJ0RVh0U29mdHdhcmUATWF0cGxvdGxpYiB2My41LjEsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmfZEVHoAAACDklEQVR4nO3WO3KDMABFUQl2loVmp5gUCGaQzcgxSfXOaTT6AMZ2cet3/VpLKWWaStnGuo1zN9/3520+d/PR9fPgflfz+erzXN2vjfWYr6d57ed1fXnd07mpO1cH+xfPefdz7fcp7f1K+15qN9/36/GDDM4f69N5/bjP1Xzqrv/lfafuPlP3eYfrd6//m/X6/Ed5Pf7Vuf9+Xtneby2PNm7/w3UdzPfzaz9/91w3v/nc0vaXbSiPY6zdej3tL9389vnS7997Tv8+SzcO1x8fXvfp857W23ssbf6o53Gpr9dH+59e176PT++7tveY2gv3Y10u1vvz7Ye53h9df7H+7v4+FgAgjgAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAAC/QB9nBLdjK/6iAAAAABJRU5ErkJggg=="></div><div style="vertical-align: middle; max-width: 514px; display: flex; justify-content: space-between;"><div style="float: left;"><div title="#9e0142ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #9e0142ff;"></div> under</div><div style="margin: 0 auto; display: inline-block;">bad <div title="#00000000" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #00000000;"></div></div><div style="float: right;">over <div title="#5e4fa2ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #5e4fa2ff;"></div></div>
-
-
+Here the output is missing in the website for other reasons
 
 ### Exercice:
 Make a plot that resemble the following one:
