@@ -4,7 +4,7 @@ This is the repository for the 3 first classes of the CENTURI "Coding for life s
 
 These 3 half-days of course are split in 2 main parts:
 1. [Introduction to coding with Turing patterns](1-Introduction-to-Python/Resources/0-Introduction.md)
-2. [Data handling and visualisation](2-Data-handling-and-visu/Resources/Matplotlib-course/Matplotlib-course.md) (Work in progress)
+2. [Data handling and visualisation](2-Data-handling-and-visu/Resources/Matplotlib-course/1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) (Work in progress)
 
 ## 0. Requirements for the course.
 

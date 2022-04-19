@@ -34,7 +34,7 @@ def __build_curve(length=500, freq=.03,
     curve = gaussian_filter1d(curve, sigma=sigma)
     return curve
 
-def __solution():
+def __solution_1():
     nb_plots = 50
     max_height = 5
     min_height = 1
@@ -76,6 +76,115 @@ def __solution():
 
     fig.tight_layout()
     fig.savefig('Resources/exercice_1.png')
+
+def __solution_2():
+    fig, ax = plt.subplots(figsize=(6, 5))
+    for bin_num in range(10, 52, 20):
+        ax.hist(data1, bins=bin_num, histtype='step', cumulative=True,
+                lw=3, label=f'{bin_num} bins', alpha=.75);
+    Y = np.ones_like(data1).cumsum()
+    X = np.sort(data1)
+    ax.plot(X, Y, lw=3, label='\'inf\' bins', alpha=.75)
+    ax.set_xlim(np.min(data1), np.max(data1))
+    ax.set_ylim(0, len(data1)+1)
+    ax.legend(loc='lower right')
+    fig.tight_layout()
+    fig.savefig('Resources/exercise_2.png')
+
+def __solution_3():
+    X1 = np.linspace(0, 2*np.pi)
+    X2 = np.linspace(0, 2*np.pi)
+    Y1 = np.sin(X1*2)/2
+    Y2 = np.cos(X2)
+
+    def update(t):
+        l1.set_data(X1[:t], Y1[:t])
+        l2.set_data(X2[:t], Y2[:t])
+        if 5<=t<30:
+            ax.collections.clear()
+            ax.fill_between(X1[5:t], Y1[5:t], Y2[5:t], color='y')
+
+    fig, ax = plt.subplots(figsize=(10, 3))
+    l1, = ax.plot(X1, Y1, '-o', label='sin', lw=5, ms=10, markevery=[-1])
+    l2, = ax.plot(X2, Y2, '-o', label='cosin', lw=3, ms=10, markevery=[-1])
+    ax.legend(loc='lower left')
+    sns.despine(trim=True, offset=15, ax=ax)
+    fig.tight_layout()
+    anim = animation.FuncAnimation(fig, update, frames=50, interval=50)
+    HTML(anim.to_jshtml())
+    anim.save('Resources/cos-sin.gif')
+
+def __solution_4():
+    np.random.seed(1)
+    nb = 200
+    positions = np.random.uniform(0, 10, size=(nb, 2))
+
+    def update(t):
+        global scatter
+        scatter.set_facecolors(colors[:t+1])
+        scatter.set_offsets(positions[:t, ...])
+        scatter.set_sizes(sizes[:t])
+        return scatter,
+
+    cmap = mpl.cm.get_cmap('viridis')
+    colors = np.linspace(0, 1, nb)
+    sizes = np.linspace(10, 600, nb)
+    np.random.shuffle(sizes)
+    np.random.shuffle(colors)
+    colors = cmap(colors)
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.set_aspect('equal')
+    scatter = ax.scatter([], [], edgecolor='k', alpha=.6)
+    ax.set_xlim(0, 10)
+    ax.set_ylim(0, 11)
+    ax.axis('off')
+    fig.tight_layout()
+    anim = animation.FuncAnimation(fig, update, frames=nb, interval=15)
+    HTML(anim.to_jshtml())
+    anim.save('Resources/square.gif')
+
+def __solution_5():
+    np.random.seed(1)
+    nb = 150
+    found = 0
+    positions = []
+    while found<nb:
+        next_pos = np.random.uniform(1, 9, size=2)
+        if np.sum((next_pos - [5, 5])**2)<4**2:
+            positions.append(next_pos)
+            found+=1
+    positions = np.array(positions)
+    # positions = np.random.uniform(1, 9, size=(nb, 2))
+
+    # positions = positions[np.sum((positions - [5, 5])**2, axis=1)<16]
+
+    def update(t):
+        global scatter
+        scatter.set_facecolors(colors[:t+1])
+        scatter.set_offsets(positions[:t, ...])
+        scatter.set_sizes(sizes[:t])
+        return scatter,
+
+    cmap = mpl.cm.get_cmap('viridis')
+    colors = np.linspace(0, 1, nb)
+    sizes = np.linspace(10, 600, nb)
+    np.random.shuffle(sizes)
+    np.random.shuffle(colors)
+    colors = cmap(colors)
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.set_aspect('equal')
+    scatter = ax.scatter([], [], edgecolor='k', alpha=.6)
+    ax.set_xlim(0, 10)
+    ax.set_ylim(0, 10)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    # ax.axis('off')
+    fig.tight_layout()
+    anim = animation.FuncAnimation(fig, update, frames=nb, interval=25)
+    HTML(anim.to_jshtml())
+    anim.save('Resources/circle.gif')
+
+
 
 def build_curve(length=500, freq=.03,
                 min_height=1, max_height=10,
