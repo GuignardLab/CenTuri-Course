@@ -2,7 +2,7 @@
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
-* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) &larr; ([Notebook](../../03-04-Figures-and-Subplots.ipynb))
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) &larr; ([Notebook](../../../03-04-Figures-and-Subplots.ipynb))
 * [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
 * [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
 * [9 Histograms](../9-Histograms/9-Histograms.md)
