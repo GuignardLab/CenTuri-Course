@@ -125,9 +125,9 @@ Using the previous data and with the help of the previous figure, build a plot t
 # Do that here
 ```
 
-> Side note, it is sometimes useful to have access to mathematical characters, for example to display units. Matplotlib allows to do that using the [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) formating:
+> Side note, it is sometimes useful to have access to mathematical characters, for example to display units. Matplotlib allows to do that using the [<img src="https://render.githubusercontent.com/render/math?math=\LaTeX">](https://en.wikipedia.org/wiki/LaTeX) formating:
 >
-> You can put a `r` before the string and use the usual [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) formating like that for example:
+> You can put a `r` before the string and use the usual [<img src="https://render.githubusercontent.com/render/math?math=\LaTeX">](https://en.wikipedia.org/wiki/LaTeX) formating like that for example:
 
 
 ```python

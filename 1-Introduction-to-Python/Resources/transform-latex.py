@@ -58,5 +58,7 @@ if __name__ == '__main__':
             with open(file, 'r') as f:
                 text = f.read()
         text = rewrite(text)
-        with open(file.with_suffix(f'.{args.s}.md'), 'w') as f:
+        if args.s != '' and args.s[0] != '.':
+            args.s = '.' + args.s
+        with open(file.with_suffix(f'{args.s}.md'), 'w') as f:
             f.write(text)
