@@ -1,7 +1,7 @@
 &larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](1-Variables.md)
 
 # Table of contents
-* [1-2-Introduction and Line plots](2-Data-handling-and-visu/Resources/1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) &larr;
+* [1-2-Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) &larr;
 * [3-4-Figures-and-Subplots](2-Data-handling-and-visu/Resources/3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
 * [Data structures](2-Data-Structures.md)
 * [Conditional statements and loops](3-Conditional-Statements-Loops.md)
