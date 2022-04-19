@@ -97,13 +97,13 @@ HTML(anim.to_jshtml())
 
 ## Exercice:
 Create your own animation of any plot you want. If you are out of idea, you can try to recreate the following one (or part of it):
-![png](Resources/cos-sin.gif)
+![png](../../cos-sin.gif)
 
 Or something like this:
-![png](Resources/square.gif)
+![png](../../square.gif)
 
 Or that:
-![png](Resources/circle.gif)
+![png](../../circle.gif)
 
 Or even like the one proposed in [Nicolas Rougier's book](https://github.com/rougier/scientific-visualization-book):
 

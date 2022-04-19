@@ -224,7 +224,7 @@ ax.legend()
 
 Plot the following cumulative histograms (note that to plot the infinite bins you need to use `plot` and not `hist`):
 
-![png](Resources/exercise_2.png)
+![png](../../exercise_2.png)
 
 
 ```python
