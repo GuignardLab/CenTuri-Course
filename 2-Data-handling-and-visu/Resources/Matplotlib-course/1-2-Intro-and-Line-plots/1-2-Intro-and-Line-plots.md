@@ -1,17 +1,13 @@
-&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](1-Variables.md)
+&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
 
 # Table of contents
-* [1-2-Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) &larr;
-* [3-4-Figures-and-Subplots](2-Data-handling-and-visu/Resources/3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
-* [Data structures](2-Data-Structures.md)
-* [Conditional statements and loops](3-Conditional-Statements-Loops.md)
-* [Some exercises](4-Some-Exercises.md)
-* [Introduction to functions](5-0-Introduction-function.md)
-    * [File manipulation](5-1-File-manipulation.md)
-* [From 0D to 1D](6-1-From-0D-to-1D.md)
-    * [Adding lateral diffusion](6-2-Adding-lateral-diffusion.md)
-* [From 1D to 2D](7-From-1D-to-2D.md)
-* [Playing with the model](8-Playing-with-the-model.md)
+* [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) &larr;
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+* [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+* [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+* [9 Histograms](../9-Histograms/9-Histograms.md)
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+* [12 Animations](../12-Animations/12-Animations.md)
 
 # Visualising data using matplotlib
 
@@ -174,3 +170,4 @@ plt.plot(X, Y, 'b-.>')
 ![png](output_15_1.png)
     
 
+&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)

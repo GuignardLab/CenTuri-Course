@@ -1,3 +1,14 @@
+[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../9-Histograms/9-Histograms.md)
+
+# Table of contents
+* [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+* [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+* [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md) &larr;
+* [9 Histograms](../9-Histograms/9-Histograms.md)
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+* [12 Animations](../12-Animations/12-Animations.md)
+
 ## 7. Preparing and saving a figure
 Once we are happy with our figure, we can save it with `fig.savefig`. The function `fig.savefig` can take multiple out formats such as png, jpeg, pdf or svg:
 
@@ -147,3 +158,5 @@ Here is the list of plots that we will look at:
     - scatterplot
     
 We will __*NOT*__ look at barplots.
+
+[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../9-Histograms/9-Histograms.md)

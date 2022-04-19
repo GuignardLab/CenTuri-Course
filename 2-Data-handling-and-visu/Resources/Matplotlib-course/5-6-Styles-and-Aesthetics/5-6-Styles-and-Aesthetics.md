@@ -1,3 +1,14 @@
+[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+
+# Table of contents
+* [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+* [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) &larr;
+* [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+* [9 Histograms](../9-Histograms/9-Histograms.md)
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+* [12 Animations](../12-Animations/12-Animations.md)
+
 ## 5. Plot styles
 Different styles are available with matplotlib to customise your plots, you can list them with the command `plt.style.available`:
 
@@ -344,3 +355,5 @@ ax.legend();
 ![png](output_24_0.png)
     
 
+
+[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)

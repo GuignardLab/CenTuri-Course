@@ -1,3 +1,14 @@
+[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+
+# Table of contents
+* [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) &larr;
+* [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+* [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+* [9 Histograms](../9-Histograms/9-Histograms.md)
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+* [12 Animations](../12-Animations/12-Animations.md)
+
 ## 3. Figures
 There is a very large number of parameters for the plots, we will not go through them all here but we will some of them along this course.
 
@@ -290,3 +301,4 @@ ax.legend()
 ![png](output_25_1.png)
     
 
+[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)

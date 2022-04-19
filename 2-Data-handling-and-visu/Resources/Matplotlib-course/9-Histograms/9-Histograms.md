@@ -1,4 +1,13 @@
-## 9. Histograms
+[&larr; previous](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+
+# Table of contents
+* [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
+* [3-4 Figures and Subplots](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+* [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+* [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+* [9 Histograms](../9-Histograms/9-Histograms.md) &larr;
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
+* [12 Animations](../12-Animations/12-Animations.md)
 
 Histograms are a good way to look at a given distribution.
 
@@ -221,3 +230,5 @@ Plot the following cumulative histograms (note that to plot the infinite bins yo
 ```python
 ## Write your solution here
 ```
+
+[&larr; previous](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
