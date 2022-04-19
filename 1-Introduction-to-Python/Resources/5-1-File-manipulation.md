@@ -236,9 +236,6 @@ One way to solve a coding problem is to decompose it in multiple smaller problem
 There are often multiple ways to decompose a problem, we will show you one here, it might not be the optimal one (regardless of the optimal metric used) but it should be a working one.
 To build that decomposition, it can sometimes be useful to rephrase the problem in terms of what you want the code to do:
 
-<details>
-    <summary><b>Click here to display the pseudo-code<b/></summary>
-    
 ```
 for each file in folder do (1)
     if the file is a png file do (2)
@@ -250,9 +247,6 @@ for each file in folder do (1)
     end if
 end for
 ```
-
-</details>
-
 
 This decomposition allows to identify the important points in the code and to organise the code to be produced.
 Here, we want to loop on the files (1), check if the file is a file of interest (2), retrieve the value of `k` in the file name (3), create a folder with the `k` value if necessary (4) and move the file in the appropriate folder (5).
