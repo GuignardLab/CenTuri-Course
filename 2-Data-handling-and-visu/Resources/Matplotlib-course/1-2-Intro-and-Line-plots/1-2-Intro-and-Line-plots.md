@@ -85,9 +85,9 @@ plt.plot(Y)
     
 
 
-We are plotting what we want but, the `x` values are not the correct ones (in $[0, 30|]$ instead of $[-\pi, 2\pi]$).
+We are plotting what we want but, the `x` values are not the correct ones (in <img src="https://render.githubusercontent.com/render/math?math=[0, 30|]"> instead of <img src="https://render.githubusercontent.com/render/math?math=[-\pi, 2\pi]">).
 
-The reason is that we are only giving the `y` axis values (note that they are indeed ranging in $[-1, 1]$). So let's give the `x` values:
+The reason is that we are only giving the `y` axis values (note that they are indeed ranging in <img src="https://render.githubusercontent.com/render/math?math=[-1, 1]">). So let's give the `x` values:
 
 
 
