@@ -6,7 +6,7 @@
 * [5-6 Styles and Aesthetics](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
 * [7-8 Saving and Color maps](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
 * [9 Histograms](../9-Histograms/9-Histograms.md)
-* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) &larr;
+* [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) &larr; ([Notebook](../../10-11-Boxplots-Violinplots-and-Scatter-plots.ipynb))
 * [12 Animations](../12-Animations/12-Animations.md)
 
 ## 10. Boxplots and violin plots
