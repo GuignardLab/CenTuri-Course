@@ -8,6 +8,7 @@
 * [9 Histograms](../9-Histograms/9-Histograms.md)
 * [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) &larr; ([Notebook](../../../10-11-Boxplots-Violinplots-and-Scatter-plots.ipynb))
 * [12 Animations](../12-Animations/12-Animations.md)
+* [13 On the usage of Seaborn](../13-Seaborn/13-Seaborn.md)
 
 ## 10. Boxplots and violin plots
 Another way to look at distribution is to use boxplots:

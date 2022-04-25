@@ -8,6 +8,7 @@
 * [9 Histograms](../9-Histograms/9-Histograms.md)
 * [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
 * [12 Animations](../12-Animations/12-Animations.md)
+* [13 On the usage of Seaborn](../13-Seaborn/13-Seaborn.md)
 
 # Visualising data using matplotlib
 

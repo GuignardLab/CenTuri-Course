@@ -8,6 +8,7 @@
 * [9 Histograms](../9-Histograms/9-Histograms.md)
 * [10-11 Boxplots Violinplots and Scatter plots](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md)
 * [12 Animations](../12-Animations/12-Animations.md)
+* [13 On the usage of Seaborn](../13-Seaborn/13-Seaborn.md)
 
 ## 3. Figures
 There is a very large number of parameters for the plots, we will not go through them all here but we will some of them along this course.
