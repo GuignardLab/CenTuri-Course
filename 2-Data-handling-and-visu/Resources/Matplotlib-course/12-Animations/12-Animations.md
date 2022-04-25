@@ -1,4 +1,4 @@
-[&larr; previous](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../13-Animations/13-Animations.md)
+[&larr; previous](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../13-Seaborn/13-Seaborn.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -114,4 +114,4 @@ Or even like the one proposed in [Nicolas Rougier's book](https://github.com/rou
 HTML(anim.to_jshtml())
 ```
 
-[&larr; previous](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../13-Animations/13-Animations.md)
+[&larr; previous](../10-11-Boxplots-Violinplots-and-Scatter-plots/10-11-Boxplots-Violinplots-and-Scatter-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../13-Seaborn/13-Seaborn.md)
