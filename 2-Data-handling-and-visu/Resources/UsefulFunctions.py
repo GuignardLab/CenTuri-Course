@@ -45,10 +45,10 @@ def __solution_1():
     start_freq = .25
     cmap = mpl.cm.get_cmap("Spectral")
     fig, ax = plt.subplots(figsize=(10, 8))
+    X = np.linspace(0, 10, length)
     for i in range(nb_plots):
         Y = build_curve(length, freq, min_height, max_height,
                         start, start_freq, sigma)
-        X = np.linspace(0, 10, len(Y))
         ax.plot(X, 3 * Y + i, color="k", linewidth=5, zorder=nb_plots - i)
         ax.plot(X, [i]*len(Y), color="k", linewidth=5, zorder=nb_plots - i)
         color = cmap(i / nb_plots)
