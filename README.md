@@ -16,7 +16,7 @@ To install Python and the required dependencies we strongly recommend to use [co
 
 ### 0.2 Installing conda
 
-Conda can be installed multiple ways. We do not have any recommendations about how to but one can read [there](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for a likely exhaustive list on ways to install conda. That being said.
+Conda can be installed multiple ways. We do not have any recommendations about how to but one can read [there](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for a likely exhaustive list on ways to install conda.
 
 Note that we do not necessarily recommend installing Anaconda, we do have a slight preference towards [Miniconda](https://docs.conda.io/en/latest/miniconda.html) but that's just us.
 
