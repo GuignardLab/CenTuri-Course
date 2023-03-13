@@ -1,4 +1,4 @@
-[&larr; previous](5-0-Introduction-function.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](6-1-From-0D-to-1D.md)
+[&larr; previous](5-0-Introduction-function.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](6-1-From-0D-to-1D.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -253,4 +253,4 @@ Here, we want to loop on the files (1), check if the file is a file of interest 
         
 Now, one can try to solve the 5 problems independently and ultimately assemble them to answer the question.
 
-[&larr; previous](5-0-Introduction-function.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](6-1-From-0D-to-1D.md)
+[&larr; previous](5-0-Introduction-function.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](6-1-From-0D-to-1D.md)

@@ -1,4 +1,4 @@
-[&larr; previous](0-Introduction.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](2-Data-Structures.md)
+[&larr; previous](0-Introduction.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](2-Data-Structures.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -121,4 +121,4 @@ print(f'{nb1 = }')
 print(f'{nb2 = }')
 ```
 
-[&larr; previous](0-Introduction.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](2-Data-Structures.md)
+[&larr; previous](0-Introduction.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](2-Data-Structures.md)

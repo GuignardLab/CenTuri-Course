@@ -1,4 +1,4 @@
-[&larr; previous](../9-Histograms/9-Histograms.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../12-Animations/12-Animations.md)
+[&larr; previous](../9-Histograms/9-Histograms.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../12-Animations/12-Animations.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -176,4 +176,4 @@ ax.set_aspect('equal')
 ![png](output_18_0.png)
     
 
-[&larr; previous](../9-Histograms/9-Histograms.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../12-Animations/12-Animations.md)
+[&larr; previous](../9-Histograms/9-Histograms.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../12-Animations/12-Animations.md)

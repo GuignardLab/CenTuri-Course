@@ -1,4 +1,4 @@
-[&larr; previous](6-1-From-0D-to-1D.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](7-From-1D-to-2D.md)
+[&larr; previous](6-1-From-0D-to-1D.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](7-From-1D-to-2D.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -175,4 +175,4 @@ You can now play a bit more with the different parameters before starting the fi
 # You can "play" here
 ```
 
-[&larr; previous](6-1-From-0D-to-1D.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](7-From-1D-to-2D.md)
+[&larr; previous](6-1-From-0D-to-1D.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](7-From-1D-to-2D.md)

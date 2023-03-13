@@ -1,4 +1,4 @@
-[&larr; previous](6-2-Adding-lateral-diffusion.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](8-Playing-with-the-model.md)
+[&larr; previous](6-2-Adding-lateral-diffusion.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](8-Playing-with-the-model.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -324,4 +324,4 @@ HTML(anim.to_jshtml())
 anim.save('My-first-Turing-Pattern.gif')
 ```
 
-[&larr; previous](6-2-Adding-lateral-diffusion.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](8-Playing-with-the-model.md)
+[&larr; previous](6-2-Adding-lateral-diffusion.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](8-Playing-with-the-model.md)

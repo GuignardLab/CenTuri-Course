@@ -1,4 +1,4 @@
-[&larr; previous](3-Conditional-Statements-Loops.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](5-0-Introduction-function.md)
+[&larr; previous](3-Conditional-Statements-Loops.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](5-0-Introduction-function.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -165,4 +165,4 @@ A, I = answer_results(4, A=0.4, I=0.15, dt=dt, k=k, tau=tau, n=n)
 plot_concentration_1cell(A, I)
 ```
 
-[&larr; previous](3-Conditional-Statements-Loops.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](5-0-Introduction-function.md)
+[&larr; previous](3-Conditional-Statements-Loops.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](5-0-Introduction-function.md)

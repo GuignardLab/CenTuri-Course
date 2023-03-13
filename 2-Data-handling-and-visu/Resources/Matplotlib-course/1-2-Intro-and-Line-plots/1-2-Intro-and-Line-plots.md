@@ -1,4 +1,4 @@
-&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) &larr; ([Notebook](../../../01-02-Intro-and-Line-plots.ipynb))
@@ -171,4 +171,4 @@ plt.plot(X, Y, 'b-.>')
 ![png](output_15_1.png)
     
 
-&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)
+&larr; previous - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md)

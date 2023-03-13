@@ -1,4 +1,4 @@
-[&larr; previous](../12-Animations/12-Animations.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - next &rarr;
+[&larr; previous](../12-Animations/12-Animations.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - next &rarr;
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -343,4 +343,4 @@ sns.lmplot(data=dataset, x='flipper_length_mm', y='bill_depth_mm', hue='species'
 ![png](output_12_1.png)
     
 
-[&larr; previous](../12-Animations/12-Animations.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - next &rarr;
+[&larr; previous](../12-Animations/12-Animations.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - next &rarr;

@@ -1,4 +1,4 @@
-[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -302,4 +302,4 @@ ax.legend()
 ![png](output_25_1.png)
     
 
-[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)
+[&larr; previous](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md)

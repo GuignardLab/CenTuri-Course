@@ -1,4 +1,4 @@
-[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -357,4 +357,4 @@ ax.legend();
     
 
 
-[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)
+[&larr; previous](../3-4-Figures-and-Subplots/3-4-Figures-and-Subplots.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../7-8-Saving-and-Color-maps/7-8-Saving-and-Color-maps.md)

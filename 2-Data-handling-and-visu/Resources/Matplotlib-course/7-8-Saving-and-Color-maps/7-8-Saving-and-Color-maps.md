@@ -1,4 +1,4 @@
-[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../9-Histograms/9-Histograms.md)
+[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../9-Histograms/9-Histograms.md)
 
 # Table of contents
 * [1-2 Introduction and Line plots](../1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
@@ -153,4 +153,4 @@ Here is the list of plots that we will look at:
     
 We will __*NOT*__ look at barplots.
 
-[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](../9-Histograms/9-Histograms.md)
+[&larr; previous](../5-6-Styles-and-Aesthetics/5-6-Styles-and-Aesthetics.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](../9-Histograms/9-Histograms.md)

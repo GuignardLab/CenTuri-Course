@@ -1,4 +1,4 @@
-[&larr; previous](1-Variables.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](3-Conditional-Statements-Loops.md)
+[&larr; previous](1-Variables.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](3-Conditional-Statements-Loops.md)
 
 # Table of contents
 0. [Introduction](0-Introduction.md)
@@ -286,4 +286,4 @@ print(f'arr1_inv -->\n{arr1_inv}\n')
 print(f'arr1 . arr1_inv -->\n{np.round(arr1 @ arr1_inv)}\n')
 ```
 
-[&larr; previous](1-Variables.md) - [home](https://guignardlab.github.io/CenTuri-Course-2022/) - [next &rarr;](3-Conditional-Statements-Loops.md)
+[&larr; previous](1-Variables.md) - [home](https://guignardlab.github.io/CenTuri-Course/) - [next &rarr;](3-Conditional-Statements-Loops.md)
