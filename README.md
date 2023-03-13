@@ -1,12 +1,13 @@
-# Turing Centre for living systems's "Coding for life science" course
+# Turing Centre for living systems's "Introduction to biological data analysis" course
 
-This is the repository for the 3 first classes of the CENTURI "Coding for life science course".
+This is the repository for the introduction of the CENTURI "Introduction to biological data analysis" course.
 
-These 3 half-days of course are split in 2 main parts:
+This first day is split in 2 main parts:
+
 1. [Introduction to coding with Turing patterns](1-Introduction-to-Python/Resources/0-Introduction.md)
 2. [Data handling and visualisation](2-Data-handling-and-visu/Resources/Matplotlib-course/1-2-Intro-and-Line-plots/1-2-Intro-and-Line-plots.md)
 
-## 0. Requirements for the course.
+## 0. Requirements for the course
 
 ### 0.1 Recommended software
 
@@ -55,7 +56,7 @@ All dependencies should now be installed!
 
 Enjoy!
 
-### 0.4 Troubleshooting for MacOs M1 chips.
+### 0.4 Troubleshooting for MacOs M1 chips
 
 The newly introduced M1 chips in the latest macbooks can create some difficulties for installation.
 
@@ -68,20 +69,21 @@ If you would like to test your configuration, you can run the following python f
 One way to run it is the following:
 
 From a terminal in the folder that contains `Configuration-test.py`:
+
 ```shell
 python Configuration-test.py
 ```
 
 You should get an output similar to the following one:
 > You are using Python version (3.10.4). It is recent enough for this course
-> 
+>
 > Numpy version (1.21.5) is installed
-> 
+>
 > Scipy version (1.8.0) is installed
-> 
+>
 > Matplotlib version (3.5.1) is installed
 >
->    Everything's good
+> Everything's good
 >
 >
 
