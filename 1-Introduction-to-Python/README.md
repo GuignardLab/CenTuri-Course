@@ -136,7 +136,7 @@ The gene regulation network that we are considering here is the simple one where
 > These are partial differential equations that represent the change of concentration of $A$ ($\delta a$) or $I$ ($\delta i$) in time ($\delta t$).
 >
 > In equation [1], $\nabla^2 a$ is the potential diffusion $A$ and $\mu_a$ is the diffusion coefficient.
-> $+a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ($0<k$), a sink ($k<0$) or is neutral ($k=0$).
+> $+a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ( $`k>0`$ ), a sink ( $k<0$ ) or is neutral ( $k=0$ ).
 >
 > In equation [2], $\nabla^2 i$ is the potential diffusion of $I$ and $\mu_i$ is the diffusion coefficient.
 > $+a$ is the activation from $A$, $-i$ is the degradation and $\tau$ allows to modulate the amplitude of change of concentration of $I$ compared to the one of the activator $A$.
