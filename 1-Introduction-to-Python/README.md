@@ -129,17 +129,17 @@ The gene regulation network that we are considering here is the simple one where
 > These interactions can be modelled multiple ways.
 > We decided here to use the [FitzHugh–Nagumo model](https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model) (for no particular reason) resulting in the following equations:
 >
-> $\frac{\delta a}{\delta t} = \mu_a\nabla^2 a %2B a - a^3 - i %2B k$ [1]
+> $\frac{\delta a}{\delta t} = \mu_a\nabla^2 a +a - a^3 - i +k$ [1]
 >
-> $\tau \frac{\delta i}{\delta t} = \mu_i\nabla^2 i %2B a - i$ [2]
+> $\tau \frac{\delta i}{\delta t} = \mu_i\nabla^2 i +a - i$ [2]
 >
 > These are partial differential equations that represent the change of concentration of $A$ ($\delta a$) or $I$ ($\delta i$) in time ($\delta t$).
 >
 > In equation [1], $\nabla^2 a$ is the potential diffusion $A$ and $\mu_a$ is the diffusion coefficient.
-> $%2B a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ($0<k$), a sink ($k<0$) or is neutral ($k=0$).
+> $+a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ($0<k$), a sink ($k<0$) or is neutral ($k=0$).
 >
 > In equation [2], $\nabla^2 i$ is the potential diffusion of $I$ and $\mu_i$ is the diffusion coefficient.
-> $%2B a$ is the activation from $A$, $-i$ is the degradation and $\tau$ allows to modulate the amplitude of change of concentration of $I$ compared to the one of the activator $A$.
+> $+a$ is the activation from $A$, $-i$ is the degradation and $\tau$ allows to modulate the amplitude of change of concentration of $I$ compared to the one of the activator $A$.
 
 It is important to know that to model the previous network it is necessary to decide on some values, the parameters of the model:
 - the diffusion coefficients $\mu_a$ and $\mu_i$ (referred to as `mu_a` and `mu_i` in the code)

@@ -65,7 +65,7 @@ Write a loop that increments the concentration value of the concentration `a` ac
 
 The function `da_alone` implements the change of concentration ($\delta a$) according to $a$, $\delta t$ and $k$:
 
-$\delta a = \delta t (a - a^3 %2B k)$
+$\delta a = \delta t (a - a^3 +k)$
 
 
 
@@ -113,7 +113,7 @@ Now that we know how to compute the evolution of a given concentration, we want 
 
 To do so we can use the functions `da` and `di` that implements the following equations:
 
-$\delta a = \delta t(a-a^3-i%2B k)$
+$\delta a = \delta t(a-a^3-i+k)$
 
 
 $\delta i = \frac{\delta t}{\tau}(a -i)$

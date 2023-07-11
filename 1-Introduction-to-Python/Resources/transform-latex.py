@@ -11,7 +11,7 @@ def rewrite(text):
     found = double_dollars.search(text)
     while found:
         sub = text[found.start()+2:found.end()-2]
-        sub = sub.strip().replace('+', '%2B ')
+        sub = sub.strip().replace('+', '+')
         text = (text[:found.start()] +
                 f'<img src="https://render.githubusercontent.com/render/math?math={sub}">\n\n' +
                 text[found.end():])
@@ -20,7 +20,7 @@ def rewrite(text):
     found = simple_dollar.search(text)
     while found:
         sub = text[found.start()+1:found.end()-1]
-        sub = sub.strip().replace('+', '%2B ')
+        sub = sub.strip().replace('+', '+')
         text = (text[:found.start()] +
                 f'<img src="https://render.githubusercontent.com/render/math?math={sub}">' +
                 text[found.end():])
