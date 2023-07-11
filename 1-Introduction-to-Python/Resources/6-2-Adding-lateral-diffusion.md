@@ -16,17 +16,17 @@
 ### 5.2 Adding lateral diffusion
 Now, we are going to start doing real 1D!
 
-The idea is that, up to now, we are able to have a row of cells that are acting next to each other but independently. We want to add to that the diffusion process of the Turing patterns: the <img src="https://render.githubusercontent.com/render/math?math=\mu_a\Delta a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i\Delta i">.
+The idea is that, up to now, we are able to have a row of cells that are acting next to each other but independently. We want to add to that the diffusion process of the Turing patterns: the <img src="https://render.githubusercontent.com/render/math?math=\mu_a\nabla^2 a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i\nabla^2 i">.
 
 We model the lateral diffusion for a given cell as simply as possible. The diffusion is a proportion (the parameters <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i">) of concentration that a cell receive from its direct neighbours minus what that cell gives to its neighbour, which is twice a given proportion of its own concentration (the proportion being <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> for the activator and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> for the inhibitor).
 
 Now, if <img src="https://render.githubusercontent.com/render/math?math=a_x"> is the activator concentration in the cell at the position <img src="https://render.githubusercontent.com/render/math?math=x">, we can formalise the previous sentence as follow:
-<img src="https://render.githubusercontent.com/render/math?math=\mu_a\Delta a_x = \mu_a \frac{a_{x%2B \delta x} %2B  a_{x-\delta x} - 2a_x}{\delta x}">
+<img src="https://render.githubusercontent.com/render/math?math=\mu_a\nabla^2 a_x = \mu_a \frac{a_{x%2B \delta x} %2B  a_{x-\delta x} - 2a_x}{\delta x}">
 
 
 
 Therefore, after diffusion for a given time <img src="https://render.githubusercontent.com/render/math?math=\delta t">, the concentration <img src="https://render.githubusercontent.com/render/math?math=a_x"> is:
-<img src="https://render.githubusercontent.com/render/math?math=a_{x, t%2B \delta t} = a_{x, t} %2B  \delta t\mu_a\Delta a_{x,t} = a_{x,t} %2B  \delta t\mu_a \frac{a_{x%2B \delta x, t} %2B  a_{x-\delta x, t} - 2a_{x, t}}{\delta x}">
+<img src="https://render.githubusercontent.com/render/math?math=a_{x, t%2B \delta t} = a_{x, t} %2B  \delta t\mu_a\nabla^2 a_{x,t} = a_{x,t} %2B  \delta t\mu_a \frac{a_{x%2B \delta x, t} %2B  a_{x-\delta x, t} - 2a_{x, t}}{\delta x}">
 
 
 We tried to explain that with the following figure:
