@@ -16,17 +16,17 @@
 ### 5.2 Adding lateral diffusion
 Now, we are going to start doing real 1D!
 
-The idea is that, up to now, we are able to have a row of cells that are acting next to each other but independently. We want to add to that the diffusion process of the Turing patterns: the <img src="https://render.githubusercontent.com/render/math?math=\mu_a\nabla^2 a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i\nabla^2 i">.
+The idea is that, up to now, we are able to have a row of cells that are acting next to each other but independently. We want to add to that the diffusion process of the Turing patterns: the $\mu_a\nabla^2 a$ and $\mu_i\nabla^2 i$.
 
-We model the lateral diffusion for a given cell as simply as possible. The diffusion is a proportion (the parameters <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i">) of concentration that a cell receive from its direct neighbours minus what that cell gives to its neighbour, which is twice a given proportion of its own concentration (the proportion being <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> for the activator and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> for the inhibitor).
+We model the lateral diffusion for a given cell as simply as possible. The diffusion is a proportion (the parameters $\mu_a$ and $\mu_i$) of concentration that a cell receive from its direct neighbours minus what that cell gives to its neighbour, which is twice a given proportion of its own concentration (the proportion being $\mu_a$ for the activator and $\mu_i$ for the inhibitor).
 
-Now, if <img src="https://render.githubusercontent.com/render/math?math=a_x"> is the activator concentration in the cell at the position <img src="https://render.githubusercontent.com/render/math?math=x">, we can formalise the previous sentence as follow:
-<img src="https://render.githubusercontent.com/render/math?math=\mu_a\nabla^2 a_x = \mu_a \frac{a_{x%2B \delta x} %2B  a_{x-\delta x} - 2a_x}{\delta x}">
+Now, if $a_x$ is the activator concentration in the cell at the position $x$, we can formalise the previous sentence as follow:
+$\mu_a\nabla^2 a_x = \mu_a \frac{a_{x%2B \delta x} %2B  a_{x-\delta x} - 2a_x}{\delta x}$
 
 
 
-Therefore, after diffusion for a given time <img src="https://render.githubusercontent.com/render/math?math=\delta t">, the concentration <img src="https://render.githubusercontent.com/render/math?math=a_x"> is:
-<img src="https://render.githubusercontent.com/render/math?math=a_{x, t%2B \delta t} = a_{x, t} %2B  \delta t\mu_a\nabla^2 a_{x,t} = a_{x,t} %2B  \delta t\mu_a \frac{a_{x%2B \delta x, t} %2B  a_{x-\delta x, t} - 2a_{x, t}}{\delta x}">
+Therefore, after diffusion for a given time $\delta t$, the concentration $a_x$ is:
+$a_{x, t%2B \delta t} = a_{x, t} %2B  \delta t\mu_a\nabla^2 a_{x,t} = a_{x,t} %2B  \delta t\mu_a \frac{a_{x%2B \delta x, t} %2B  a_{x-\delta x, t} - 2a_{x, t}}{\delta x}$
 
 
 We tried to explain that with the following figure:
@@ -34,7 +34,7 @@ We tried to explain that with the following figure:
 
 Now that we have explained the theory (which might look a bit scary at first glance), let's see how we can implement that in practice.
 
-As before, we need to compute the concentration of <img src="https://render.githubusercontent.com/render/math?math=A"> and <img src="https://render.githubusercontent.com/render/math?math=I"> for each cell.
+As before, we need to compute the concentration of $A$ and $I$ for each cell.
 The difference is that before it was only depending on what was in that cell, now it also depends on what was in the neighbouring cells.
 
 Before (no neighbourhood interaction), i:
@@ -59,7 +59,7 @@ Because we are adding a new dimension to our problem, most of what we have devel
 
 This is because our two base functions (`da` and `di`) on which we built everything else do not take neighbouring cells as a parameter.
 
-So ... we now have to rewrite the functions `da` and `di` so that they do take into account lateral diffusion. And because we are now a bit more advanced, we will write them into one function that takes as input a row of cells at <img src="https://render.githubusercontent.com/render/math?math=t"> and outputs the new row of cells at <img src="https://render.githubusercontent.com/render/math?math=t%2B \delta t">.
+So ... we now have to rewrite the functions `da` and `di` so that they do take into account lateral diffusion. And because we are now a bit more advanced, we will write them into one function that takes as input a row of cells at $t$ and outputs the new row of cells at $t%2B \delta t$.
 
 The function will therefore have the following header:
 ```python

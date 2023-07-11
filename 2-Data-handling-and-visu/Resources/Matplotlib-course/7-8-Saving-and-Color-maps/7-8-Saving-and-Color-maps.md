@@ -81,7 +81,7 @@ Moreover, there are multiple potentially useful options to save a figure for exa
 Choosing colours can be a fairly hard task. Thankfully, matplotlib has a handful of colormaps already made for us, you can find them [there](https://matplotlib.org/stable/tutorials/colors/colormaps.html).
 
 The way colormaps usually work within matplotlib is by giving a colour code provided a value between 0 and 1.
-In other words, the colormap is a linear mapping between the interval <img src="https://render.githubusercontent.com/render/math?math=[0, 1]"> and the colours of the colormap.
+In other words, the colormap is a linear mapping between the interval $[0, 1]$ and the colours of the colormap.
 
 Here is an example on how to use them:
 

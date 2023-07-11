@@ -71,7 +71,7 @@ Computers have strengths and weaknesses. They are especially good at:
 - performing basic operations: additions, multiplications, ...
 - accessing their short and long term memory
 
-For example, current common processors are working at <img src="https://render.githubusercontent.com/render/math?math=2.5GHz\simeq 2.5\times 10^9"> actions per second, meaning that if you would perform 1 action every second it would take you about 800 years to perform as many actions as a computer is doing in one second.
+For example, current common processors are working at $2.5GHz\simeq 2.5\times 10^9$ actions per second, meaning that if you would perform 1 action every second it would take you about 800 years to perform as many actions as a computer is doing in one second.
 
 Computers are also good at storing information and accessing it.
 Computers can store about 1TB of data in "slow-to-access" memory and about 32GB of data in fast access memory (RAM).
@@ -110,44 +110,44 @@ What is important to keep in mind is that in its simplest form, a Turing pattern
 It is this interaction and diffusion that we will model in this course. We will also learn how to graphically represent these patterns.
 
 A little bit of knowledge about how to model these interactions is necessary to better understand the remainder of the course.
-First, we will be talking about an activator that will name <img src="https://render.githubusercontent.com/render/math?math=A"> and an inhibitor that will name <img src="https://render.githubusercontent.com/render/math?math=I">. Their concentration values will be refered to as <img src="https://render.githubusercontent.com/render/math?math=a"> and <img src="https://render.githubusercontent.com/render/math?math=i"> respectively.
+First, we will be talking about an activator that will name $A$ and an inhibitor that will name $I$. Their concentration values will be refered to as $a$ and $i$ respectively.
 
-The gene regulation network that we are considering here is the simple one where <img src="https://render.githubusercontent.com/render/math?math=A"> auto-activates and activates <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=I"> inhibits <img src="https://render.githubusercontent.com/render/math?math=A">:
+The gene regulation network that we are considering here is the simple one where $A$ auto-activates and activates $I$ and $I$ inhibits $A$:
 
 <img src="Images/GRN.png" alt="Gene Regulation Network" width="200"/>
 
 > _**To go a little bit further (not required):**_
 >
-> From this network, we can extract the interaction between activator <img src="https://render.githubusercontent.com/render/math?math=A"> and an inhibitor <img src="https://render.githubusercontent.com/render/math?math=I"> as follow:
+> From this network, we can extract the interaction between activator $A$ and an inhibitor $I$ as follow:
 >
-> <img src="https://render.githubusercontent.com/render/math?math=A \rightarrow A"> (<img src="https://render.githubusercontent.com/render/math?math=A"> is auto activated)
+> $A \rightarrow A$ ($A$ is auto activated)
 >
-> <img src="https://render.githubusercontent.com/render/math?math=A \rightarrow I"> (<img src="https://render.githubusercontent.com/render/math?math=A"> activates <img src="https://render.githubusercontent.com/render/math?math=I">)
+> $A \rightarrow I$ ($A$ activates $I$)
 >
-> <img src="https://render.githubusercontent.com/render/math?math=I \dashv A"> (<img src="https://render.githubusercontent.com/render/math?math=I"> inhibits <img src="https://render.githubusercontent.com/render/math?math=A">)
+> $I \dashv A$ ($I$ inhibits $A$)
 >
 > These interactions can be modelled multiple ways.
 > We decided here to use the [FitzHugh–Nagumo model](https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model) (for no particular reason) resulting in the following equations:
 >
-> <img src="https://render.githubusercontent.com/render/math?math=\frac{\delta a}{\delta t} = \mu_a\nabla^2 a %2B a - a^3 - i %2B k"> [1]
+> $\frac{\delta a}{\delta t} = \mu_a\nabla^2 a %2B a - a^3 - i %2B k$ [1]
 >
-> <img src="https://render.githubusercontent.com/render/math?math=\tau \frac{\delta i}{\delta t} = \mu_i\nabla^2 i %2B a - i"> [2]
+> $\tau \frac{\delta i}{\delta t} = \mu_i\nabla^2 i %2B a - i$ [2]
 >
-> These are partial differential equations that represent the change of concentration of <img src="https://render.githubusercontent.com/render/math?math=A"> (<img src="https://render.githubusercontent.com/render/math?math=\delta a">) or <img src="https://render.githubusercontent.com/render/math?math=I"> (<img src="https://render.githubusercontent.com/render/math?math=\delta i">) in time (<img src="https://render.githubusercontent.com/render/math?math=\delta t">).
+> These are partial differential equations that represent the change of concentration of $A$ ($\delta a$) or $I$ ($\delta i$) in time ($\delta t$).
 >
-> In equation [1], <img src="https://render.githubusercontent.com/render/math?math=\nabla^2 a"> is the potential diffusion <img src="https://render.githubusercontent.com/render/math?math=A"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> is the diffusion coefficient.
-> <img src="https://render.githubusercontent.com/render/math?math=%2B a"> is the auto-activation of <img src="https://render.githubusercontent.com/render/math?math=A">, <img src="https://render.githubusercontent.com/render/math?math=-a^3"> is the degradation, <img src="https://render.githubusercontent.com/render/math?math=-i"> is the inhibition from <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=k"> is a constant to determine whether <img src="https://render.githubusercontent.com/render/math?math=A"> acts as a source (<img src="https://render.githubusercontent.com/render/math?math=0<k">), a sink (<img src="https://render.githubusercontent.com/render/math?math=k<0">) or is neutral (<img src="https://render.githubusercontent.com/render/math?math=k=0">).
+> In equation [1], $\nabla^2 a$ is the potential diffusion $A$ and $\mu_a$ is the diffusion coefficient.
+> $%2B a$ is the auto-activation of $A$, $-a^3$ is the degradation, $-i$ is the inhibition from $I$ and $k$ is a constant to determine whether $A$ acts as a source ($0<k$), a sink ($k<0$) or is neutral ($k=0$).
 >
-> In equation [2], <img src="https://render.githubusercontent.com/render/math?math=\nabla^2 i"> is the potential diffusion of <img src="https://render.githubusercontent.com/render/math?math=I"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> is the diffusion coefficient.
-> <img src="https://render.githubusercontent.com/render/math?math=%2B a"> is the activation from <img src="https://render.githubusercontent.com/render/math?math=A">, <img src="https://render.githubusercontent.com/render/math?math=-i"> is the degradation and <img src="https://render.githubusercontent.com/render/math?math=\tau"> allows to modulate the amplitude of change of concentration of <img src="https://render.githubusercontent.com/render/math?math=I"> compared to the one of the activator <img src="https://render.githubusercontent.com/render/math?math=A">.
+> In equation [2], $\nabla^2 i$ is the potential diffusion of $I$ and $\mu_i$ is the diffusion coefficient.
+> $%2B a$ is the activation from $A$, $-i$ is the degradation and $\tau$ allows to modulate the amplitude of change of concentration of $I$ compared to the one of the activator $A$.
 
 It is important to know that to model the previous network it is necessary to decide on some values, the parameters of the model:
-- the diffusion coefficients <img src="https://render.githubusercontent.com/render/math?math=\mu_a"> and <img src="https://render.githubusercontent.com/render/math?math=\mu_i"> (referred to as `mu_a` and `mu_i` in the code)
-- the constant <img src="https://render.githubusercontent.com/render/math?math=\tau"> (referred to as `tau`)
-- the constant <img src="https://render.githubusercontent.com/render/math?math=k"> (referred to as `k`)
+- the diffusion coefficients $\mu_a$ and $\mu_i$ (referred to as `mu_a` and `mu_i` in the code)
+- the constant $\tau$ (referred to as `tau`)
+- the constant $k$ (referred to as `k`)
 
-Because we will solve the differential equations numerically (as opposed to analytically) using "simple" numerical models, we will fix the value of <img src="https://render.githubusercontent.com/render/math?math=\delta t">. Therefore:
-- <img src="https://render.githubusercontent.com/render/math?math=\delta t"> is a parameter (referred to as `dt`)
+Because we will solve the differential equations numerically (as opposed to analytically) using "simple" numerical models, we will fix the value of $\delta t$. Therefore:
+- $\delta t$ is a parameter (referred to as `dt`)
 
 Moreover other values are necessary for the computation also need to be decided:
 - the size of the grid we will be working on, ie the number of cells considered (referred to as `size`)
