@@ -1,4 +1,5 @@
 # Turing Centre for living systems's "Introduction to biological data analysis" course
+The website version [here](https://guignardlab.github.io/CenTuri-Course/)
 
 This is the repository for the introduction of the CENTURI "Introduction to biological data analysis" course.
 
