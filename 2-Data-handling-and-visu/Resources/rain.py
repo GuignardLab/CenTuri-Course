@@ -3,10 +3,9 @@
 # Author:  Nicolas P. Rougier
 # License: BSD
 # ----------------------------------------------------------------------------
-import numpy as np
-import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-from IPython.display import HTML
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 def rain_update(frame):
@@ -31,11 +30,18 @@ def rain_update(frame):
 
 fig = plt.figure(figsize=(6, 2), facecolor="white", dpi=100)
 ax = fig.add_axes([0, 0, 1, 1], frameon=False)  # , aspect=1)
-scatter = ax.scatter([], [], s=[], linewidth=0.5, edgecolors=[], facecolors="None")
+scatter = ax.scatter(
+    [], [], s=[], linewidth=0.5, edgecolors=[], facecolors="None"
+)
 
 n = 100
 R = np.zeros(
-    n, dtype=[("position", float, (2,)), ("size", float, (1,)), ("color", float, (4,))]
+    n,
+    dtype=[
+        ("position", float, (2,)),
+        ("size", float, (1,)),
+        ("color", float, (4,)),
+    ],
 )
 R["position"] = np.random.uniform(0, 1, (n, 2))
 R["size"] = np.linspace(0, 1, n).reshape(n, 1)

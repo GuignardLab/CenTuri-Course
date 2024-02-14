@@ -3,9 +3,9 @@
 # Author:  Nicolas P. Rougier
 # License: BSD
 # ----------------------------------------------------------------------------
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter
+import numpy as np
+from matplotlib.ticker import AutoMinorLocator, FuncFormatter, MultipleLocator
 
 np.random.seed(123)
 
@@ -42,13 +42,15 @@ ax.grid(linestyle="--", linewidth=0.5, color=".25", zorder=-10)
 
 ax.plot(X, Y1, c=(0.25, 0.25, 1.00), lw=2, label="Blue signal", zorder=10)
 ax.plot(X, Y2, c=(1.00, 0.25, 0.25), lw=2, label="Red signal")
-ax.plot(X, Y3, linewidth=0, marker="o", markerfacecolor="w", markeredgecolor="k")
+ax.plot(
+    X, Y3, linewidth=0, marker="o", markerfacecolor="w", markeredgecolor="k"
+)
 
 ax.set_title("Anatomy of a figure", fontsize=20, verticalalignment="bottom")
 ax.set_xlabel("X axis label")
 ax.set_ylabel("Y axis label")
 
-ax.legend(loc='upper right')
+ax.legend(loc="upper right")
 
 
 def circle(x, y, radius=0.15):
