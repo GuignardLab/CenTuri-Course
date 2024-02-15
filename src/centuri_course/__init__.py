@@ -11,6 +11,7 @@ from .utils import (
     answer_results,
     build_curve,
 )
+from .anatomy import run_anatomy
 
 __all__ = [
     "answer",
@@ -25,4 +26,5 @@ __all__ = [
     "answer_results",
     "build_curve",
     "run_rain",
+    "run_anatomy",
 ]
