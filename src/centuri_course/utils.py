@@ -6,6 +6,7 @@ import matplotlib as mpl
 import seaborn as sns
 from IPython.display import HTML
 
+
 def da_alone(a, dt, k):
     """
     Computes the change of concentration given an initial concentration `a`,
@@ -335,6 +336,7 @@ def answer_results(q, **kwargs):
         print(f"Question {q} were not found")
         out = None
     return out
+
 
 import numpy as np
 from scipy.ndimage import gaussian_filter1d
