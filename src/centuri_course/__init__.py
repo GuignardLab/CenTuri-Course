@@ -1,4 +1,4 @@
-__version__ = "2024.1.1"
+__version__ = "2024.1.2"
 
 from .anatomy import run_anatomy
 from .Answers import answer, hint
