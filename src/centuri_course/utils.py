@@ -1,10 +1,10 @@
-from matplotlib import animation
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.ndimage import convolve
-import matplotlib as mpl
 import seaborn as sns
 from IPython.display import HTML
+from matplotlib import animation
+from scipy.ndimage import convolve
 
 
 def da_alone(a, dt, k):
@@ -338,7 +338,6 @@ def answer_results(q, **kwargs):
     return out
 
 
-import numpy as np
 from scipy.ndimage import gaussian_filter1d
 
 

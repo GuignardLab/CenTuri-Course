@@ -10,6 +10,7 @@ import numpy as np
 n = 100
 R, scatter, fig, ax = None, None, None, None
 
+
 def init_rain():
     global n, R, scatter, fig, ax
     R = np.zeros(
@@ -25,6 +26,7 @@ def init_rain():
     scatter = ax.scatter(
         [], [], s=[], linewidth=0.5, edgecolors=[], facecolors="None"
     )
+
 
 def rain_update(frame):
     global R, scatter
@@ -42,6 +44,7 @@ def rain_update(frame):
     scatter.set_offsets(R["position"])
 
     return (scatter,)
+
 
 def run_rain():
     init_rain()

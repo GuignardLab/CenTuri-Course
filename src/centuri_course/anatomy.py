@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import AutoMinorLocator, FuncFormatter, MultipleLocator
 
+
 def run_anatomy():
     np.random.seed(123)
 
@@ -18,12 +19,10 @@ def run_anatomy():
     fig = plt.figure(figsize=(8, 8))
     ax = fig.add_subplot(1, 1, 1, aspect=1)
 
-
     def minor_tick(x, pos):
         if not x % 1.0:
             return ""
         return "%.2f" % x
-
 
     ax.xaxis.set_major_locator(MultipleLocator(1.000))
     ax.xaxis.set_minor_locator(AutoMinorLocator(4))
@@ -44,15 +43,21 @@ def run_anatomy():
     ax.plot(X, Y1, c=(0.25, 0.25, 1.00), lw=2, label="Blue signal", zorder=10)
     ax.plot(X, Y2, c=(1.00, 0.25, 0.25), lw=2, label="Red signal")
     ax.plot(
-        X, Y3, linewidth=0, marker="o", markerfacecolor="w", markeredgecolor="k"
+        X,
+        Y3,
+        linewidth=0,
+        marker="o",
+        markerfacecolor="w",
+        markeredgecolor="k",
     )
 
-    ax.set_title("Anatomy of a figure", fontsize=20, verticalalignment="bottom")
+    ax.set_title(
+        "Anatomy of a figure", fontsize=20, verticalalignment="bottom"
+    )
     ax.set_xlabel("X axis label")
     ax.set_ylabel("Y axis label")
 
     ax.legend(loc="upper right")
-
 
     def circle(x, y, radius=0.15):
         from matplotlib.patches import Circle
@@ -70,7 +75,6 @@ def run_anatomy():
         )
         ax.add_artist(circle)
 
-
     def text(x, y, text):
         ax.text(
             x,
@@ -83,7 +87,6 @@ def run_anatomy():
             weight="regular",
             color="#000099",
         )
-
 
     # Minor tick
     circle(0.50, -0.10)

@@ -54,3 +54,22 @@ exclude = [
 
 target-version = "py38"
 fix = true
+
+[tool.bumpver]
+current_version = "2024.0.0"
+version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"src/centuri_course/__init__.py" = [
+    '__version__ = "{version}"',
+]
+"setup.cfg" = [
+    'version = {version}',
+]
