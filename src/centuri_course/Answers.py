@@ -105,27 +105,27 @@ def dA_I(A, I, dt, k, tau, dx, mu_a, mu_i):
     new_A = np.zeros_like(A)
     new_I = np.zeros_like(I)
     # Global solution
-    new_A[1:-1] = (new_A[1:-1] +
-                   dt * (dx*mu_a*(A[:-2] + A[2:] - 2*A[1:-1]) +
+    new_A[1:-1] = (A[1:-1] +
+                   dt * (mu_a/dx*(A[:-2] + A[2:] - 2*A[1:-1]) +
                          A[1:-1] - A[1:-1]**3 - I[1:-1] + k))
 
-    new_I[1:-1] = (new_I[1:-1] +
-                   dt/tau * (dx*mu_i*(I[:-2] + I[2:] - 2*I[1:-1]) +
+    new_I[1:-1] = (I[1:-1] +
+                   dt/tau * (mu_i/dx*(I[:-2] + I[2:] - 2*I[1:-1]) +
                              A[1:-1] - I[1:-1]))
 
     # Edge case handling: first (0) and last (-1) cells
-    new_A[0] = (new_A[0] +
-                dt * (dx*mu_a*(A[1] - A[0]) +
+    new_A[0] = (A[0] +
+                dt * (mu_a/dx*(A[1] - A[0]) +
                       A[0] - A[0]**3 - I[0] + k))
-    new_A[-1] = (new_A[-1] +
-                 dt * (dx*mu_a*(A[-2] - A[-1]) +
+    new_A[-1] = (A[-1] +
+                 dt * (mu_a/dx*(A[-2] - A[-1]) +
                        A[-1] - A[-1]**3 - I[-1] + k))
 
-    new_I[0] = (new_I[0] +
-                dt/tau * (dx*mu_i*(I[1] - I[0]) +
+    new_I[0] = (I[0] +
+                dt/tau * (mu_i/dx*(I[1] - I[0]) +
                           A[0] - I[0]))
-    new_I[-1] = (new_I[-1] +
-                 dt/tau * (dx*mu_i*(I[-2] - I[-1]) +
+    new_I[-1] = (I[-1] +
+                 dt/tau * (mu_i/dx*(I[-2] - I[-1]) +
                            A[-1] - I[-1]))
     return new_A, new_I""",
     16: """

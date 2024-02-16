@@ -206,7 +206,7 @@ def __question_14(*, A, I, dt, k, tau, dx, mu_a, mu_i):
     new_A[0] = A[0] + dt * (
         dx * mu_a * (A[1] - A[0]) + A[0] - A[0] ** 3 - I[0] + k
     )
-    new_A[-1] = new_A[-1] + dt * (
+    new_A[-1] = A[-1] + dt * (
         dx * mu_a * (A[-2] - A[-1]) + A[-1] - A[-1] ** 3 - I[-1] + k
     )
 
