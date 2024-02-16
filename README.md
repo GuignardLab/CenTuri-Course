@@ -1,6 +1,6 @@
 # Turing Centre for living systems's "Introduction to biological data analysis" course
 
-The website version [here](https://guignardlab.github.io/CenTuri-Course/)
+<!-- The website version [here](https://guignardlab.github.io/CenTuri-Course/) -->
 
 This is the repository for the introduction of the CENTURI "Introduction to biological data analysis" course.
 
@@ -15,7 +15,20 @@ This first day is split in 2 main parts:
 
 This course is made on a [jupyter notebook](https://jupyter.org/) running on Python 3.8 or newer.
 
-To install Python and the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
+You can either run the notebooks using [google colab](https://colab.research.google.com).
+
+From there you can open the notebooks by selecting the GitHub tab then typing GuignardLab/Centuri-Course:
+
+![colab](img/colab.png)
+
+If you don't want to use google colab you can run the software directly on your computer by first cloning this repository:
+
+```shell
+git clone https://github.com/GuignardLab/CenTuri-Course.git
+```
+
+Then, to install Python and the required dependencies we strongly recommend to use [conda](https://docs.conda.io/en/latest/),
+[mamba](https://mamba.readthedocs.io/en/latest/) or [pipenv](https://pipenv.pypa.io/en/latest/) (the teachers will use conda)
 
 ### 0.2 Installing conda
 
@@ -27,19 +40,10 @@ Moreover, we advise to start jupyter notebooks from a shell/terminal/prompt to b
 
 ### 0.3 Dependencies
 
-While we tried to keep the dependencies as small as possible, few are still required:
-
-- [Jupyter notebook](https://jupyter.org/)
-- [NumPy](https://numpy.org/)
-- [Scipy](https://scipy.org/)
-- [Matplotlib](https://matplotlib.org/)
-
-Note that other libraries might be necessary for the courses after.
-
 To install them one can for example run the following command lines in a terminal, assuming that conda is installed:
 
 ```shell
-conda create --name CenTuri-Course
+conda create --name CenTuri-Course python=3.10
 ```
 
 to create the environment for the course. Then:
@@ -51,42 +55,15 @@ conda activate CenTuri-Course
 to activate the course environment. And finally:
 
 ```shell
-conda install notebook numpy scipy matplotlib
+pip install centuri_course
 ```
 
 All dependencies should now be installed!
 
-Enjoy!
-
-### 0.4 Troubleshooting for MacOs M1 chips
-
-The newly introduced M1 chips in the latest macbooks can create some difficulties for installation.
-
-One way to solve the issue is to install [Miniforge](https://github.com/conda-forge/miniforge) and to then use it as Miniconda.
-
-### 0.5 Testing your configuration
-
-If you would like to test your configuration, you can run the following python file: `Configuration-test.py`.
-
-One way to run it is the following:
-
-From a terminal in the folder that contains `Configuration-test.py`:
+You can then start the notebooks by running:
 
 ```shell
-python Configuration-test.py
+jupyter notebook 1-Introduction-to-Python
 ```
 
-You should get an output similar to the following one:
-> You are using Python version (3.10.4). It is recent enough for this course
->
-> Numpy version (1.21.5) is installed
->
-> Scipy version (1.8.0) is installed
->
-> Matplotlib version (3.5.1) is installed
->
-> Everything's good
->
->
-
-If your python version is too old or if you failed to install one of the libraries, you will get an error message.
+Enjoy!
